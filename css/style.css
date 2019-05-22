@@ -6,41 +6,29 @@ button {
 
 h1 {
     font-family: 'Orbitron', sans-serif;
-    font-weight: bolder;
 }
 
-.group-header {
-    font-size: 250%;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-family: 'Khand', sans-serif;
-}
 
-.sub-group-header {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 200%;
-    text-decoration: underline;
-    font-family: 'Khand', sans-serif;
-}
-
-.budget-label {
-    font-size: 150%;
-    font-family: 'Khand', sans-serif;
-}
-
-.totalBanner {
-    background-color: orange;
-    color: white;
-    padding: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 350%;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.total {
-    color: #000;
+.tab-heading {
     font-family: 'Orbitron', sans-serif;
+    font-size: 140%;
 }
+
+.tab-display-window{
+    overflow: scroll;
+}
+
+.plus-size{
+    font-size: 80%;
+}
+/*#tabDisplay1 {
+    opacity: 0;
+}
+
+#tabDisplay2 {
+    opacity: 0;
+}
+
+#tabDisplay3 {
+    opacity: 0;
+}*/

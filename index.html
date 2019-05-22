@@ -1,133 +1,201 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Monthly Budgeting Calculator</title>
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Khand|Orbitron" rel="stylesheet">
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!-- Bootstrap 4 CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Popper JS & jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="card bg-info text-white mx-auto w-100">
-                    <div class="card-header">
-                        <h1 class="display-3">Monthly Budget Calculator</h1>
-                    </div>
-                    <div class="card-body">
-                        <!--NET PAY INPUT-->
-                        <label class="group-header">Monthly Net Pay:</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
+<head>
+    <meta charset="utf-8">
+    <title>NolaBooks: Monthly Budgeting Calculator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Khand|Orbitron" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Popper JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card mx-auto w-100 h-100 mt-4">
+                <div class="card-header">
+                    <h1 class="display-4 font-weight-lighter text-center my-2">
+                        NolaBooks <i class="fas fa-calculator"></i></h1>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-tabs mx-auto">
+                        <li id="tab1" class="nav-item">
+                            <div class="nav-link active tab-heading">Income &amp; Expenses <i
+                                    class="fas fa-dollar-sign"></i></div>
+                        </li>
+                        <li id="tab2" class="nav-item">
+                            <div class="nav-link tab-heading">Monthly Projection <i class="far fa-calendar-alt"></i>
                             </div>
-                            <input type="number" id="netPay" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
-                        </div>
-                    <hr>
-                        <!--NET PAY INPUT END-->
-                    <p class="group-header">Home Expenses</p>
-                        <!--RENT INPUT-->
-                        <label class="sub-group-header">RENT</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" id="rent" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
-                        </div>
-                        <!--RENT INPUT END-->
-                    <p class="sub-group-header">UTILITIES</p>
-                <div class="form-row">
-                    <div class="col">
-                            <!--ELECTRICITY INPUT-->
-                            <label class="budget-label">Electricity:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">$</span>
+                        </li>
+                        <li id="tab3" class="nav-item">
+                            <div class="nav-link tab-heading">Yearly Projection <i class="fas fa-globe"></i></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tabDisplay1" class="container tab-display-window">
+                    <div class="accordion" id="ieAccordion">
+                        <div class="border-top border-bottom border-info my-1" id="headingOne">
+                            <h2 class="mb-0 border-top border-bottom border-info">
+                                <button class="btn btn-link text-info" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-plus text-info"></i> Income
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingTwo">
+                                <div class="card-body border-bottom border-info">
+                                    <!-- INSIDE OF INCOME ACCORDION -->
+                                    <div class="accordion" id="iePickAccordion">
+                                        <div class="border-top border-bottom border-secondary my-1" id="headingTwo">
+                                            <h5 class="mb-0 border-top border-bottom border-secondary">
+                                                <button class="btn btn-link text-secondary" data-toggle="collapse"
+                                                    data-target="#ieMonthlyCollapse" aria-expanded="true"
+                                                    aria-controls="ieMonthlyCollapse">
+                                                    Monthly
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="ieMonthlyCollapse" class="collapse show" aria-labelledby="headingTwo"
+                                            data-parent="#iePickAccordion" style="">
+                                            <div class="card-body border-bottom border-secondary">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="col-7">
+                                                            <label>Monthly Income:</label>
+                                                            <input type="text" class="form-control" placeholder="Enter your net pay here">
+                                                        </div>
+                                                        <div class="col">
+                                                            <label>Month of Pay:</label>
+                                                            <select class="custom-select" id="inlineFormCustomSelectPref">
+                                                                <option selected>Choose...</option>
+                                                                <option value="Januart">January</option>
+                                                                <option value="February">February</option>
+                                                                <option value="March">March</option>
+                                                                <option value="April">April</option>
+                                                                <option value="May">May</option>
+                                                                <option value="June">June</option>
+                                                                <option value="July">July</option>
+                                                                <option value="August">August</option>
+                                                                <option value="September">September</option>
+                                                                <option value="October">October</option>
+                                                                <option value="November">November</option>
+                                                                <option value="December">December</option>
+                                                            </select> </div>
+                                                        <div class="col">
+                                                            <label>Date of Pay:</label>
+                                                            <input type="number" class="form-control">
+                                                        </div>
+                                                        <button type="button" id="monthlyAddIncome" class="mx-auto btn btn-info w-50 mt-3">Add Income</button>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="border-top border-bottom border-secondary my-1" id="headingThree">
+                                            <h5 class="mb-0 border-top border-bottom border-secondary">
+                                                <button class="btn btn-link collapsed text-secondary"
+                                                    data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Yearly
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#iePickAccordion">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="col-8">
+                                                            <label>Monthly Income:</label>
+                                                            <input type="text" class="form-control" placeholder="Enter your monthly net pay here">
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="exampleFormControlSelect1">Monthly/Yearly:</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>Monthly</option>
+                                                                <option>Yearly</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" id="monthlyAddIncome" class="mx-auto btn btn-info w-50 mt-3">Add Income</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <input type="number" id="electricity" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
                             </div>
-                            <!--ELECTRICITY INPUT END-->
-                    </div>
-                    <div class="col">
-                            <!-- GAS INPUT-->
-                            <label class="budget-label">Gas:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">$</span>
+                        </div>
+                        <div class="border-top border-bottom border-info my-1" id="headingFour">
+                            <h2 class="mb-0 border-top border-bottom border-info">
+                                <button class="btn btn-link collapsed text-info" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <i class="fas fa-plus text-info"></i> Savings
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingFour">
+                                <div class="card-body border-bottom border-info">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
                                 </div>
-                                <input type="number" id="gasBill" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
                             </div>
-                            <!--GAS INPUT END-->
+                        </div>
+                        <div class="border-top border-bottom border-info my-1" id="headingThree">
+                            <h2 class="mb-0 border-top border-bottom border-info">
+                                <button class="btn btn-link collapsed text-info" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    <i class="fas fa-plus text-info"></i> Expenses
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
+                                <div class="card-body border-bottom border-info">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="col">
-                            <!--WATER INPUT-->
-                            <label class="budget-label">Water:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">$</span>
-                                </div>
-                                <input type="number" id="water" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
-                            </div>
-                            <!--WATER INPUT END-->
-                    </div>
-                    <div class="col">
-                            <!-- WIFI INPUT-->
-                            <label class="budget-label">Wifi:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">$</span>
-                                </div>
-                                <input type="number" id="wifi" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
-                            </div>
-                            <!--WIFI INPUT END-->
-                    </div>
+                <div id="tabDisplay2" class="container tab-display-window" style="display: none;">
+                    <p>Test 2!</p>
                 </div>
-                    <hr>
-                    <p class="group-header">Miscellaneous</p>
-                        <!--GROCERIES INPUT-->
-                        <label class="budget-label">Groceries:</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" id="groceries" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
-                        </div>
-                        <!--GROCERIES INPUT END-->
-                        <!--GAS INPUT-->
-                        <label class="budget-label">Gas:</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" id="gas" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
-                        </div>
-                        <!--GAS INPUT END-->
-                        <!--MONTHLY SUBSCRIPTIONS INPUT-->
-                        <label class="budget-label">Monthly Subscriptions::</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
-                            </div>
-                            <input type="number" id="monthlySubs" class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
-                        </div>
-                        <!--MONTHLY SUBSCRIPTIONS INPUT END-->
-                        <button id="submitBtn" class="btn btn-dark my-3">Submit</button>
-                    </div>
+                <div id="tabDisplay3" class="container tab-display-window" style="display: none;">
+                    <p>Test 3!</p>
                 </div>
-                <script src="js/calculator.js"></script>
-            <!-- ROW DIV --></div>
-        <!-- CONTAINER DIV --></div>
-        <div class="totalBanner">TOTAL: <span class="total" id="yourTotal"></span></div>
-    </body>
+            </div>
+            <script src="js/tabDisplay.js"></script>
+            <!-- ROW DIV -->
+        </div>
+        <!-- CONTAINER DIV -->
+    </div>
+</body>
+
 </html>
