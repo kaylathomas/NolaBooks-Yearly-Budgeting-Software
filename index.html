@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>NolaBooks: Monthly Budgeting Calculator</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Khand|Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Saira|Shadows+Into+Light|Special+Elite|Unica+One&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -29,173 +29,582 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="card mx-auto w-100 h-100 mt-4">
-                <div class="card-header">
-                    <h1 class="display-4 font-weight-lighter text-center my-2">
+            <div class="card border-info mx-auto w-100 mt-4">
+                <div class="card-header bg-info">
+                    <h1 class="display-4 font-weight-lighter text-center text-white my-2">
                         NolaBooks <i class="fas fa-calculator"></i></h1>
                 </div>
-                <div class="card-body">
-                    <ul class="nav nav-tabs mx-auto">
-                        <li id="tab1" class="nav-item">
-                            <div class="nav-link active tab-heading">Income &amp; Expenses <i
-                                    class="fas fa-dollar-sign"></i></div>
+                <div class="card-body calculator-tab-window">
+                    <ul class="nav nav-tabs sticky-top navbar-tab-headers" id="myTab" role="tablist">
+                        <li class="nav-item mx-auto w-25">
+                          <a class="nav-link active text-center text-dark tab-heading" id="tab1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Monthly Budget <i
+                            class="fas fa-dollar-sign"></i></a>
                         </li>
-                        <li id="tab2" class="nav-item">
-                            <div class="nav-link tab-heading">Monthly Projection <i class="far fa-calendar-alt"></i>
-                            </div>
+                        <li class="nav-item mx-auto w-25">
+                          <a class="nav-link text-center text-dark tab-heading" id="tab2" data-toggle="tab" href="#tab2Content" role="tab" aria-controls="tab2Content" aria-selected="false">Monthly Projection <i class="far fa-calendar-alt"></i></a>
                         </li>
-                        <li id="tab3" class="nav-item">
-                            <div class="nav-link tab-heading">Yearly Projection <i class="fas fa-globe"></i></div>
+                        <li class="nav-item mx-auto w-25">
+                          <a class="nav-link text-center text-dark tab-heading" id="tab3" data-toggle="tab" href="#tab3Content" role="tab" aria-controls="tab3Content" aria-selected="false">Yearly Budget <i class="fas fa-chart-pie"></i></a>
                         </li>
-                    </ul>
-                </div>
-                <div id="tabDisplay1" class="container tab-display-window">
-                    <div class="accordion" id="ieAccordion">
-                        <div class="border-top border-bottom border-info my-1" id="headingOne">
-                            <h2 class="mb-0 border-top border-bottom border-info">
-                                <button class="btn btn-link text-info" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fas fa-plus text-info"></i> Income
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingTwo">
-                                <div class="card-body border-bottom border-info">
-                                    <!-- INSIDE OF INCOME ACCORDION -->
-                                    <div class="accordion" id="iePickAccordion">
-                                        <div class="border-top border-bottom border-secondary my-1" id="headingTwo">
-                                            <h5 class="mb-0 border-top border-bottom border-secondary">
-                                                <button class="btn btn-link text-secondary" data-toggle="collapse"
-                                                    data-target="#ieMonthlyCollapse" aria-expanded="true"
-                                                    aria-controls="ieMonthlyCollapse">
-                                                    Monthly
-                                                </button>
-                                            </h5>
-                                        </div>
-
-                                        <div id="ieMonthlyCollapse" class="collapse show" aria-labelledby="headingTwo"
-                                            data-parent="#iePickAccordion" style="">
-                                            <div class="card-body border-bottom border-secondary">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="col-7">
-                                                            <label>Monthly Income:</label>
-                                                            <input type="text" class="form-control" placeholder="Enter your net pay here">
+                        <li class="nav-item mx-auto w-25">
+                            <a class="nav-link text-center text-dark tab-heading" id="tab4" data-toggle="tab" href="#tab4Content" role="tab" aria-controls="tab4Content" aria-selected="false">Yearly Projection <i class="fas fa-signal"></i></a>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab1Content" role="tabpanel" aria-labelledby="tab1">
+                            <div class="accordion" id="ieAccordion">
+                                <div class="border-top border-bottom border-info my-1" id="headingOne">
+                                    <h2 class="mb-0 border-top border-bottom border-info">
+                                        <button class="btn btn-link text-info collapse-heading" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="monthlyIncomeCollapse">
+                                            <i class="fas fa-plus text-info"></i> Income
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingTwo">
+                                        <div class="card-body border-bottom border-info">
+        
+                                            <!-- INSIDE OF INCOME ACCORDION -->
+                                            
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col-7">
+                                                        <label>Net Income:</label>
+                                                        <div class="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                                            </div>
+                                                            <input type="text" class="form-control" id="monthlyNet">
                                                         </div>
-                                                        <div class="col">
-                                                            <label>Month of Pay:</label>
-                                                            <select class="custom-select" id="inlineFormCustomSelectPref">
-                                                                <option selected>Choose...</option>
-                                                                <option value="Januart">January</option>
-                                                                <option value="February">February</option>
-                                                                <option value="March">March</option>
-                                                                <option value="April">April</option>
-                                                                <option value="May">May</option>
-                                                                <option value="June">June</option>
-                                                                <option value="July">July</option>
-                                                                <option value="August">August</option>
-                                                                <option value="September">September</option>
-                                                                <option value="October">October</option>
-                                                                <option value="November">November</option>
-                                                                <option value="December">December</option>
-                                                            </select> </div>
-                                                        <div class="col">
-                                                            <label>Date of Pay:</label>
-                                                            <input type="number" class="form-control">
-                                                        </div>
-                                                        <button type="button" id="monthlyAddIncome" class="mx-auto btn btn-info w-50 mt-3">Add Income</button>
-
                                                     </div>
-                                                </form>
+                                                    <div class="col">
+                                                        <label>Current Month:</label>
+                                                        <select class="custom-select" id="thisMonthNow">
+                                                            <option selected>Choose...</option>
+                                                            <option value="Januart">January</option>
+                                                            <option value="February">February</option>
+                                                            <option value="March">March</option>
+                                                            <option value="April">April</option>
+                                                            <option value="May">May</option>
+                                                            <option value="June">June</option>
+                                                            <option value="July">July</option>
+                                                            <option value="August">August</option>
+                                                            <option value="September">September</option>
+                                                            <option value="October">October</option>
+                                                            <option value="November">November</option>
+                                                            <option value="December">December</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="col">
+                                                        <label>Rate Of Pay:</label>
+                                                        <select class="form-control" id="monthlyFreq">
+                                                            <option>Weekly</option>
+                                                            <option>Bi-Weekly</option>
+                                                            <option>Monthly</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="button" id="monthlyAddIncome" class="mx-auto btn btn-info w-25 mt-3">Add Income <i class="fas fa-plus"></i></button>
+                                                    <button type="button" id="monthlyIncomeYearBudget" class="mx-auto btn btn-orange w-25 mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top border-bottom border-info my-1" id="headingFour">
+                                    <h2 class="mb-0 border-top border-bottom border-info">
+                                        <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="monthlySavingsCollapse">
+                                            <i class="fas fa-plus text-info"></i> Savings
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingFour">
+                                        <div class="card-body border-bottom border-info">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <label>Savings(General):</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="monthlySavings">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label>Emergency Fund:</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="monthlyEmergency">
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="border-top border-bottom border-secondary my-1" id="headingThree">
-                                            <h5 class="mb-0 border-top border-bottom border-secondary">
-                                                <button class="btn btn-link collapsed text-secondary"
-                                                    data-toggle="collapse" data-target="#collapseThree"
-                                                    aria-expanded="false" aria-controls="collapseThree">
-                                                    Yearly
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                            data-parent="#iePickAccordion">
-                                            <div class="card-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="col-8">
-                                                            <label>Monthly Income:</label>
-                                                            <input type="text" class="form-control" placeholder="Enter your monthly net pay here">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <label>401k:</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="inputGroup-sizing-default">$</span>
                                                         </div>
-                                                        <div class="col">
-                                                            <label for="exampleFormControlSelect1">Monthly/Yearly:</label>
-                                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                                <option>Monthly</option>
-                                                                <option>Yearly</option>
-                                                            </select>
-                                                        </div>
+                                                        <input type="text" class="form-control" id="monthly401k">
                                                     </div>
-                                                    <button type="button" id="monthlyAddIncome" class="mx-auto btn btn-info w-50 mt-3">Add Income</button>
-                                                </form>
+                                                </div>
+                                                <div class="col">
+                                                    <label>Investments:</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="monthlyInvestments">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label>Retirement:</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="button" id="monthlyAddSavings" class="mx-auto btn btn-info w-25 mt-3">Add Savings <i class="fas fa-plus"></i></button>
+                                                <button type="button" id="monthlySavingsYearBudget" class="mx-auto btn btn-orange w-25 mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="border-top border-bottom border-info my-1" id="headingFive">
+                                    <h2 class="mb-0 border-top border-bottom border-info">
+                                        <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                                            data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                            <i class="fas fa-plus text-info"></i> Expenses
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive">
+                                        <div class="card-body border-info">
+                                            <button class="nav-link text-center btn btn-block btn-info w-75 mx-auto monthly-finance-button" id="monthlyHomeButton" data-toggle="tab" href="#monthlyHomeDisplay" role="tab" aria-controls="monthlyHomeDisplay" aria-selected="false">Home <i class="fas fa-home"></i></button>
+
+                                            <button class="nav-link text-center btn btn-block btn-info w-75 mx-auto monthly-finance-button" id="monthlyDebtButton" data-toggle="tab" href="#monthlyDebtDisplay" role="tab" aria-controls="monthlyDebtDisplay" aria-selected="false">Debt & Loans <i class="far fa-credit-card"></i></button>
+        
+                                            <button class="nav-link text-center btn btn-block btn-info w-75 mx-auto monthly-finance-button" id="monthlyTransportationButton" data-toggle="tab" href="#monthlyTransportationDisplay" role="tab" aria-controls="monthlyTransportationDisplay" aria-selected="false">Transportation <i class="fas fa-subway"></i></button>
+
+                                            <button class="nav-link text-center btn btn-block btn-info w-75 mx-auto monthly-finance-button" id="monthlyEducationalButton" data-toggle="tab" href="#monthlyMedicalDisplay" role="tab" aria-controls="monthlyMedicalDisplay" aria-selected="false">Medical <i class="fas fa-briefcase-medical"></i></button>
+        
+                                            <button class="nav-link text-center btn btn-block btn-info w-75 mx-auto monthly-finance-button" id="monthlyEducationalButton" data-toggle="tab" href="#monthlyEducationalDisplay" role="tab" aria-controls="monthlyEducationalDisplay" aria-selected="false">Educational <i class="fas fa-book-open"></i></button>
+                
+                                            <button class="nav-link text-center btn btn-block btn-info w-75 mx-auto monthly-finance-button" id="monthlyFoodAndPersonalButton" data-toggle="tab" href="#monthlyFoodAndPersonalDisplay" role="tab" aria-controls="monthlyFoodAndPersonalDisplay" aria-selected="false">Food and Personal <i class="fas fa-wifi"></i></button>
+        
+                                            <button class="nav-link text-center btn btn-block btn-info w-75 mx-auto monthly-finance-button" id="monthlyOneTimeButton" data-toggle="tab" href="#monthlyOneTimeDisplay" role="tab" aria-controls="monthlyOneTimeDisplay" aria-selected="false">One-Time Expenses <i class="fas fa-cocktail"></i></button>
+        
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="border-top border-bottom border-info my-1" id="headingFour">
-                            <h2 class="mb-0 border-top border-bottom border-info">
-                                <button class="btn btn-link collapsed text-info" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    <i class="fas fa-plus text-info"></i> Savings
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingFour">
-                                <div class="card-body border-bottom border-info">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                    accusamus labore sustainable VHS.
+                </div>
+                <div class="tab-pane fade" id="tab2Content" role="tabpanel" aria-labelledby="tab2">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="tab3Content" role="tabpanel" aria-labelledby="tab3">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="tab4Content" role="tabpanel" aria-labelledby="tab4">
+                    ...
+                </div>
+                <!------------------------------------------------>
+                <!---------- MONTHLY EXPENSES DISPLAYS ----------->
+                <!------------------------------------------------>
+                <!-- Monthly Home Display -->
+                <div id="monthlyHomeDisplay" class="tab-pane fade monthly-finance-display" role="tabpanel" aria-labelledby="monthlyHomeButton">
+                    <div class="container my-3">
+                        <h4 class="font-weight-light">HOME EXPENSES</h4>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Rent:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlySavings">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Mortgage:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyEmergency">
                                 </div>
                             </div>
                         </div>
-                        <div class="border-top border-bottom border-info my-1" id="headingThree">
-                            <h2 class="mb-0 border-top border-bottom border-info">
-                                <button class="btn btn-link collapsed text-info" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                    <i class="fas fa-plus text-info"></i> Expenses
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
-                                <div class="card-body border-bottom border-info">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                    accusamus labore sustainable VHS.
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Repair/Maintinence:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthly401k">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Cable/TV:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyInvestments">
                                 </div>
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Home Insurance:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthly401k">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>HOA Fees:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyInvestments">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Internet:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthly401k">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Cellphone:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyInvestments">
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-light">UTILITIES</h4>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Water:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Gas:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Electricity:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="monthlyAddHomeExpenses" class="mx-auto btn btn-info w-25 mt-3">Add Savings <i class="fas fa-plus"></i></button>
+                            <button type="button" id="monthlySavingsYearBudget" class="mx-auto btn btn-orange mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
+                        </div>
+                    </br>
+                        <a class="text-center btn btn-orange float-right backDisplay1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Back</a>
                     </div>
                 </div>
-                <div id="tabDisplay2" class="container tab-display-window" style="display: none;">
-                    <p>Test 2!</p>
+
+                <!-- Monthly Debt & Loans Display -->
+                <div id="monthlyDebtDisplay" class="tab-pane fade monthly-finance-display" role="tabpanel" aria-labelledby="monthlyDebtButton">
+                    <div class="container my-3">
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Credit Cards:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlySavings">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Student Loans:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyEmergency">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Medical Debt:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthly401k">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Tax Payments:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyInvestments">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Store Cards:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Personal Debt:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="monthlyAddSavings" class="mx-auto btn btn-info w-25 mt-3">Add Savings <i class="fas fa-plus"></i></button>
+                            <button type="button" id="monthlySavingsYearBudget" class="mx-auto btn btn-orange w-25 mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
+                        </div>
+                    </br>
+                        <a class="text-center btn btn-orange float-right backDisplay1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Back</a>
+                    </div>
                 </div>
-                <div id="tabDisplay3" class="container tab-display-window" style="display: none;">
-                    <p>Test 3!</p>
+
+                <!-- Monthly Transportation Display -->
+                <div id="monthlyTransportationDisplay" class="tab-pane fade monthly-finance-display" role="tabpanel" aria-labelledby="monthlyTransportationButton">
+                    <div class="container my-3">
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Car Payment:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlySavings">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Car Insurance:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyEmergency">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Gas:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthly401k">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Car Repairs:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyInvestments">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label>Parking & Tolls:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Public Transit:</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="monthlyRetirement">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="monthlyAddSavings" class="mx-auto btn btn-info w-25 mt-3">Add Savings <i class="fas fa-plus"></i></button>
+                            <button type="button" id="monthlySavingsYearBudget" class="mx-auto btn btn-orange w-25 mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
+                        </div>
+                    </br>
+                        <a class="text-center btn btn-orange float-right backDisplay1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Back</a>
+                    </div>
+                </div>
+
+                <!-- Monthly Medical Display -->
+                <div id="monthlyMedicalDisplay" class="tab-pane fade monthly-finance-display" role="tabpanel" aria-labelledby="monthlyMedicalButton">
+                    <div class="container my-3">
+                        <div class="form-row">
+                            <label>Health Insurance:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Copays:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Prescriptions:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Life Insurance:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="monthlyAddSavings" class="mx-auto btn btn-info w-25 mt-3">Add Savings <i class="fas fa-plus"></i></button>
+                            <button type="button" id="monthlySavingsYearBudget" class="mx-auto btn btn-orange w-25 mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
+                        </div>
+                    </br>
+                        <a class="text-center btn btn-orange float-right backDisplay1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Back</a>
+                    </div>
+                </div>
+
+                <!-- Monthly Educational Display -->
+                <div id="monthlyEducationalDisplay" class="tab-pane fade monthly-finance-display" role="tabpanel" aria-labelledby="monthlyEducationalButton">
+                    <div class="container my-3">
+                        <div class="form-row">
+                            <label>School Supplies:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Meal Plan:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>College Tuition:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Textbooks:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                                </div>
+                                <input type="text" class="form-control" id="monthlyRetirement">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="monthlyAddSavings" class="mx-auto btn btn-info w-25 mt-3">Add Savings <i class="fas fa-plus"></i></button>
+                            <button type="button" id="monthlySavingsYearBudget" class="mx-auto btn btn-orange w-25 mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
+                        </div>
+                    </br>
+                        <a class="text-center btn btn-orange float-right backDisplay1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Back</a>
+                    </div>
+                </div>
+
+
+                <!-- Monthly Food and Personal Expenses Display -->
+                <div id="monthlyFoodAndPersonalDisplay" class="tab-pane fade monthly-finance-display" role="tabpanel" aria-labelledby="monthlyFoodAndPersonalButton">
+                    <div class="container my-3">
+                        Food & Personal test!
+                    </br>
+                        <a class="text-center btn btn-orange float-right backDisplay1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Back</a>
+                    </div>
+                </div>
+
+                <!-- Monthly One Time Purchases Display -->
+                <div id="monthlyOneTimeDisplay" class="tab-pane fade monthly-finance-display" role="tabpanel" aria-labelledby="monthlyOneTimeButton">
+                    <div class="container my-3">
+                        One-time expenses test!
+                    </br>
+                        <a class="text-center btn btn-orange float-right backDisplay1" data-toggle="tab" href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Back</a>
+                    </div>
                 </div>
             </div>
-            <script src="js/tabDisplay.js"></script>
-            <!-- ROW DIV -->
+            </div>
         </div>
-        <!-- CONTAINER DIV -->
-    </div>
+        </div><!-- ROW DIV -->
+    </div><!-- CONTAINER DIV -->
+    <script src="js/localStorage.js"></script>
+    <script src="js/tabDisplay.js"></script>
+    <script src="js/monthlyExpenses.js"></script>
 </body>
 
 </html>

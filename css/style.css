@@ -1,34 +1,72 @@
 @charset "UTF-8";
 
+/* ------------------------ */
+/*          BUTTONS         */
+/* ------------------------ */
+
 button {
     font-family: 'Orbitron', sans-serif;
 }
 
-h1 {
-    font-family: 'Orbitron', sans-serif;
+.navbar-tab-headers {
+    background-color: #fff;
 }
 
+.collapse-heading {
+    font-family: 'Unica One', cursive;
+    text-transform: uppercase;
+    font-size: 70%;
+}
+
+.btn-orange {
+    background-color: #f06800;
+    color: #ffffff;
+}
+
+.btn-orange:hover {
+    background-color: #cb5800;
+    color: #ffffff;
+}
+
+.backDisplay1 {
+    width: 10%;
+    background-color: #f06800;
+    color: #ffffff;
+}
+
+.backDisplay1:hover {
+    background-color: #cb5800;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Special Elite', cursive;
+}
 
 .tab-heading {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 140%;
+    font-family: 'Unica One', cursive;
+    /*font-family: 'Permanent Marker', cursive;*/
+    text-transform: uppercase;
+    font-size: 1.3rem;
 }
 
+.sub-collapse-heading {
+    font-family: 'Unica One', cursive;
+    color: white;
+    text-transform: uppercase;
+}
+
+/*
 .tab-display-window{
+    height: 600px;
+    overflow: scroll;
+}*/
+
+.calculator-tab-window{
+    height: 650px;
     overflow: scroll;
 }
 
 .plus-size{
     font-size: 80%;
 }
-/*#tabDisplay1 {
-    opacity: 0;
-}
-
-#tabDisplay2 {
-    opacity: 0;
-}
-
-#tabDisplay3 {
-    opacity: 0;
-}*/
