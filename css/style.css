@@ -1,6 +1,30 @@
 @charset "UTF-8";
 
 /* ------------------------ */
+/*           FONTS          */
+/* ------------------------ */
+
+/* RALEWAY */
+.raleway-light {
+    font-family: font-family: 'Raleway', sans-serif, 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.raleway {
+    font-family: font-family: 'Raleway', sans-serif, 'Open Sans', sans-serif;
+}
+
+/* UNICA ONE */
+.unica-one-lighter {
+    font-family: 'Unica One', cursive;
+    font-weight: lighter;
+}
+
+.unica-one {
+    font-family: 'Unica One', cursive;
+}
+
+/* ------------------------ */
 /*          BUTTONS         */
 /* ------------------------ */
 
@@ -18,7 +42,19 @@ button {
     font-size: 70%;
 }
 
+/*----------------------------*/
+/*           COLORS           */
+/*----------------------------*/
+.text-orange {
+    color: #f06800;
+}
+
 .btn-orange {
+    background-color: #f06800;
+    color: #ffffff;
+}
+
+.bg-orange {
     background-color: #f06800;
     color: #ffffff;
 }
@@ -69,4 +105,12 @@ h1 {
 
 .plus-size{
     font-size: 80%;
+}
+
+/*----------------------------*/
+/*            PILLS           */
+/*----------------------------*/
+
+.monthly-yearly-tab:hover{
+    color: #000;
 }
