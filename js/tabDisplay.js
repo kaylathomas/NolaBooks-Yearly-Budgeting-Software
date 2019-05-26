@@ -1,30 +1,31 @@
-//---------------------------------
-//         ACTIVATE TABS
-//---------------------------------
-//Load 4 tabs
-$("#tab1Content").load("monthlyBudget/tabContent1.html #monthlyBudgetAccordion")
-$("#tab2Content").load("tabContent2.html")
-$("#tab3Content").load("tabContent3.html")
-$("#tab4Content").load("tabContent4.html")
+//--------------------------------------
+//            TAB 1 CONTENT
+//--------------------------------------
+$(".income-collapse").load("monthlyBudget/collapses/income-collapse.html form")
+$(".savings-collapse").load("monthlyBudget/collapses/savings-collapse.html #savingsCollapseDiv")
+
 
 //--------------------------------------
 //          MONTHLY BUDGET TABS
 //--------------------------------------
 //Monthly Home Expenses Display
-$("#monthlyHomeDisplay").load("monthlyBudget/monthly-home-display.html")
-$("#monthlyHomeDisplay").hide()
-//Monthly Loan and Debt Display
-$("#monthlyDebtDisplay").load("monthlyBudget/monthly-debt-display.html")
-$("#monthlyDebtButton").click(function(){
-    $("monthly-finance-display").hide()
-    $("#monthlyBudgetAccordion").hide()
-    $("#monthlyHomeDisplay").show()
+$("#monthlyHomeDisplay").load("monthlyBudget/monthly-home-display.html .my-3")
+$("#monthlyHomeButton").click(function(){
+    
 })
+// $("#monthlyHomeDisplay").hide()
+//Monthly Loan and Debt Display
+$("#monthlyDebtDisplay").load("monthlyBudget/monthly-debt-display.html .my-3")
 //Monthly Transportation Display
+$("#monthlyTransportationDisplay").load("monthlyBudget/monthly-transportation-display.html .my-3")
 //Monthly Medical Display
+$("#monthlyMedicalDisplay").load("monthlyBudget/monthly-medical-display.html .my-3")
 //Monthly Educational Expenses Display
+$("#monthlyEducationalDisplay").load("monthlyBudget/monthly-educational-display.html .my-3")
 //Monthly Food & Personal Expenses Display
+$("#monthlyFoodAndPersonalDisplay").load("monthlyBudget/monthly-food-and-personal-display.html .my-3")
 //Monthly One-time Expenses Display
+$("#monthlyOneTimeDisplay").load("monthlyBudget/monthly-one-time-display.html .my-3")
 
 //--------------------------------------
 //          YEARLY BUDGET TABS

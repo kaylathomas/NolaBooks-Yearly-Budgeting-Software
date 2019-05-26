@@ -3900,6 +3900,7 @@ tbody.collapse.show {
 }
 
 .nav-pills .nav-link {
+  font-size: 80%;
   border-radius: 0.25rem;
   color: #000;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NolaBooks: Monthly Budgeting Calculator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Saira|Shadows+Into+Light|Special+Elite|Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap-grid.css">
+    <!-- Popper JS & jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap4/js/bootstrap.js"></script>
+    <!-- CSS STYLESHEET(S) -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container my-3">
+        <h3 class="unica-one">Medical Expenses</h3>
+        <div class="form-row">
+            <label>Health Insurance:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                </div>
+                <input type="text" class="form-control" id="monthlyRetirement">
+            </div>
+        </div>
+        <div class="form-row">
+            <label>Copays:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                </div>
+                <input type="text" class="form-control" id="monthlyRetirement">
+            </div>
+        </div>
+        <div class="form-row">
+            <label>Prescriptions:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                </div>
+                <input type="text" class="form-control" id="monthlyRetirement">
+            </div>
+        </div>
+        <div class="form-row">
+            <label>Life Insurance:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                </div>
+                <input type="text" class="form-control" id="monthlyRetirement">
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="button" id="monthlyAddSavings" class="mx-auto btn btn-info w-50 mt-3">Add Savings <i class="fas fa-plus"></i></button>
+            <button type="button" id="monthlySavingsYearBudget" class="mx-auto btn btn-orange w-50 mt-3">Transfer to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
+        </div>
+    </div>
+    <script src="js/localStorage.js"></script>
+    <script src="js/tabDisplay.js"></script>
+    <script src="js/monthlyExpenses.js"></script>
+</body>
+</html>

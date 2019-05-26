@@ -18,10 +18,12 @@
 .unica-one-lighter {
     font-family: 'Unica One', cursive;
     font-weight: lighter;
+    text-transform: uppercase;
 }
 
 .unica-one {
     font-family: 'Unica One', cursive;
+    text-transform: uppercase;
 }
 
 /* ------------------------ */
