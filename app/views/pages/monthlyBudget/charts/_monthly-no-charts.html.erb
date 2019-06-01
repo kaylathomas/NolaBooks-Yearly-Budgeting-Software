@@ -1,0 +1,272 @@
+<div class="container">
+    <div class="row">
+        <h1 class="unica-one text-right">Income</h1>
+        <table class="table table-striped table-bordered">
+            <thead class="bg-info text-white">
+                <tr class="unica-one table-heading">
+                    <th scope="col">Type</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Net Income</td>
+                    <td id="netIncomeCell"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="unica-one text-right font-weight-bold text-secondary">Total: <span id="monthlyIncomeTotal"
+                class="text-success"></span></h3>
+    </div>
+    <div class="row">
+        <h1 class="unica-one text-right">Savings</h1>
+        <table class="table table-striped table-bordered">
+            <thead class="bg-info text-white">
+                <tr class="unica-one table-heading">
+                    <th scope="col">Type</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Savings(General)</td>
+                    <td id="monthlySavingsCell"></td>
+                </tr>
+                <tr>
+                    <td>Emergency</td>
+                    <td id="monthlyEmergencyCell"></td>
+                </tr>
+                <tr>
+                    <td>401k</td>
+                    <td id="monthly401kCell"></td>
+                </tr>
+                <tr>
+                    <td>Investments</td>
+                    <td id="monthlyInvestmentsCell"></td>
+                </tr>
+                <tr>
+                    <td>Retirement</td>
+                    <td id="monthlyRetirementCell"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="unica-one text-right font-weight-bold text-secondary">Total: <span id="monthlySavingsTotal"
+                class="text-success"></span></h3>
+    </div>
+    <div class="row">
+        <h1 class="unica-one text-right">Expenses</h1>
+        <table class="table table-striped table-bordered">
+            <thead class="bg-info text-white">
+                <tr class="unica-one table-heading">
+                    <th scope="col">Type</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2"
+                        class="bg-secondary text-white font-weight-bold text-center unica-one table-sub-heading">Home
+                        Expenses
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rent</td>
+                    <td id="monthlyRentCell"></td>
+                </tr>
+                <tr>
+                    <td>Mortgage</td>
+                    <td id="monthlyMortgageCell"></td>
+                </tr>
+                <tr>
+                    <td>Repair/Maintinence</td>
+                    <td id="monthlyRepairCell"></td>
+                </tr>
+                <tr>
+                    <td>Cable/TV</td>
+                    <td id="monthlyCableCell"></td>
+                </tr>
+                <tr>
+                    <td>Home Insurance</td>
+                    <td id="monthlyHomeInsuranceCell"></td>
+                </tr>
+                <tr>
+                    <td>HOA Fees</td>
+                    <td id="monthlyHOACell"></td>
+                </tr>
+                <tr>
+                    <td>Internet</td>
+                    <td id="monthlyInternetCell"></td>
+                </tr>
+                <tr>
+                    <td>Cellphone</td>
+                    <td id="monthlyCellphoneCell"></td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td id="monthlyWaterCell"></td>
+                </tr>
+                <tr>
+                    <td>Gas</td>
+                    <td id="monthlyGasCell"></td>
+                </tr>
+                <tr>
+                    <td>Electricity</td>
+                    <td id="monthlyElectricityCell"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"
+                        class="bg-secondary text-white font-weight-bold text-center unica-one table-sub-heading">Debt &
+                        Loans
+                    </td>
+                </tr>
+                <tr>
+                    <td>Credit Cards</td>
+                    <td id="monthlyCreditCardsCell"></td>
+                </tr>
+                <tr>
+                    <td>Student Loans</td>
+                    <td id="monthlyStudentLoansCell"></td>
+                </tr>
+                <tr>
+                    <td>Medical Debt</td>
+                    <td id="monthlyMedicalDebtCell"></td>
+                </tr>
+                <tr>
+                    <td>Tax Payments</td>
+                    <td id="monthlyTaxPaymentsCell"></td>
+                </tr>
+                <tr>
+                    <td>Store Cards</td>
+                    <td id="monthlyStoreCardsCell"></td>
+                </tr>
+                <tr>
+                    <td>Personal Debt</td>
+                    <td id="monthlyPersonalDebtCell"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"
+                        class="bg-secondary text-white font-weight-bold text-center unica-one table-sub-heading">
+                        Transportation</td>
+                </tr>
+                <tr>
+                    <td>Car Payment</td>
+                    <td id="monthlyCarPaymentsCell"></td>
+                </tr>
+                <tr>
+                    <td>Car Insurance</td>
+                    <td id="monthlyCarInsuranceCell"></td>
+                </tr>
+                <tr>
+                    <td>Gas</td>
+                    <td id="monthlyCarGasCell"></td>
+                </tr>
+                <tr>
+                    <td>Car Repairs</td>
+                    <td id="monthlyCarRepairsCell"></td>
+                </tr>
+                <tr>
+                    <td>Parking & Tolls</td>
+                    <td id="monthlyParkingCell"></td>
+                </tr>
+                <tr>
+                    <td>Public Transit</td>
+                    <td id="monthlyPublicTransitCell"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"
+                        class="bg-secondary text-white font-weight-bold text-center unica-one table-sub-heading">Medical
+                    </td>
+                </tr>
+                <tr>
+                    <td>Health Insurance</td>
+                    <td id="monthlyHealthInsuranceCell"></td>
+                </tr>
+                <tr>
+                    <td>Copays</td>
+                    <td id="monthlyCopaysCell"></td>
+                </tr>
+                <tr>
+                    <td>Prescriptions</td>
+                    <td id="monthlyPrescriptionsCell"></td>
+                </tr>
+                <tr>
+                    <td>Life Insurance</td>
+                    <td id="monthlyLifeInsuranceCell"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"
+                        class="bg-secondary text-white font-weight-bold text-center unica-one table-sub-heading">
+                        Educational
+                    </td>
+                <tr>
+                    <td>School Supplies</td>
+                    <td id="monthlySchoolSuppliesCell"></td>
+                </tr>
+                <tr>
+                    <td>Meal Plan</td>
+                    <td id="monthlyMealPlanCell"></td>
+                </tr>
+                <tr>
+                    <td>Tuition</td>
+                    <td id="monthlyTuitionCell"></td>
+                </tr>
+                <tr>
+                    <td>Textbooks</td>
+                    <td id="monthlyTextbooksCell"></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td colspan="2"
+                        class="bg-secondary text-white font-weight-bold text-center unica-one table-sub-heading">Food &
+                        Personal</td>
+                </tr>
+                <tr>
+                    <td>Groceries/Household Purchases</td>
+                    <td id="monthlyGroceriesCell"></td>
+                </tr>
+                <tr>
+                    <td>Meals Out</td>
+                    <td id="monthlyMealsOutCell"></td>
+                </tr>
+                <tr>
+                    <td>Clothing</td>
+                    <td id="monthlyClothingCell"></td>
+                </tr>
+                <tr>
+                    <td>Entertainment</td>
+                    <td id="monthlyEntertainmentCell"></td>
+                </tr>
+                <tr>
+                    <td>Pet Supplies</td>
+                    <td id="monthlyPetCell"></td>
+                </tr>
+                <tr>
+                    <td>Hobbies & Sports</td>
+                    <td id="monthlyHobbiesCell"></td>
+                </tr>
+                <tr>
+                    <td>Charitable Donations</td>
+                    <td id="monthlyCharitableDonationsCell"></td>
+                </tr>
+                <tr>
+                    <td>Subscriptions</td>
+                    <td id="monthlySubscriptionsCell"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"
+                        class="bg-secondary text-white font-weight-bold unica-one table-sub-heading text-center">One
+                        Time
+                        Expenses</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <h3 class="unica-one text-right font-weight-bold text-secondary">Total: <span id="monthlyExpensesTotal"
+                class="text-danger"></span></h3>
+    </div>
+    <div class="row">
+        <h2 class="unica-one mx-auto font-weight-bold">End Of The Month: <span id="monthlyFinishingTotal"
+                class="text-success"></span></h2>
+    </div>
+</div>

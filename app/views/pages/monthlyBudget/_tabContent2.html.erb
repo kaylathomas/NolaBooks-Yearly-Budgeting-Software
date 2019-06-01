@@ -1,61 +1,58 @@
-<div class="container">
-    <div class="row">
-        <div class="my-2 mx-auto">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active unica-one" id="monthlyPieCharts" data-toggle="pill" href="#monthlyPieChartsTab" role="tab"
-                        aria-controls="monthlyPieChartsTab" aria-selected="true">Pie Charts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link unica-one" id="thisIncome" data-toggle="pill" href="#thisIncomeTab" role="tab"
-                        aria-controls="thisIncomeTab" aria-selected="false">Monthly Income</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link unica-one" id="thisExpenses" data-toggle="pill" href="#thisExpensesTab" role="tab"
-                        aria-controls="thisExpensesTab" aria-selected="false">Monthly Expenses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link unica-one" id="monthlyDetailedExpenses" data-toggle="pill" href="#monthlyDetailedExpensesTab" role="tab"
-                        aria-controls="monthlyDetailedExpensesTab" aria-selected="false">Detailed Expenses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link unica-one" id="monthlyLightSummary" data-toggle="pill" href="#monthlyLightSummaryTab" role="tab"
-                        aria-controls="monthlyLightSummaryTab" aria-selected="false">Light Summary</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link unica-one" id="monthtlyDeepSummary" data-toggle="pill" href="#monthlyDeepSummaryTab" role="tab"
-                        aria-controls="monthlyDeepSummaryTab" aria-selected="false">Deep Summary</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link unica-one" id="monthlyNoCharts" data-toggle="pill" href="#monthlyNoChartsTab" role="tab"
-                        aria-controls="monthlyNoChartsTab" aria-selected="false">No Charts</a>
-                </li>
-            </ul>
-        </div>
+<div class="my-2">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item mx-auto">
+            <a class="nav-link active unica-one" id="monthlyPieCharts" data-toggle="pill" href="#monthlyPieChartsTab"
+                role="tab" aria-controls="monthlyPieChartsTab" aria-selected="true">Pie
+                Charts</a>
+        </li>
+        <li class="nav-item mx-auto">
+            <a class="nav-link unica-one" id="thisIncome" data-toggle="pill" href="#thisIncomeTab" role="tab"
+                aria-controls="thisIncomeTab" aria-selected="false">Monthly Income</a>
+        </li>
+        <li class="nav-item mx-auto">
+            <a class="nav-link unica-one" id="thisExpenses" data-toggle="pill" href="#thisExpensesTab" role="tab"
+                aria-controls="thisExpensesTab" aria-selected="false">Monthly Expenses</a>
+        </li>
+        <li class="nav-item mx-auto">
+            <a class="nav-link unica-one" id="monthlyDetailedExpenses" data-toggle="pill"
+                href="#monthlyDetailedExpensesTab" role="tab" aria-controls="monthlyDetailedExpensesTab"
+                aria-selected="false">Detailed Expenses</a>
+        </li>
+        <li class="nav-item mx-auto">
+            <a class="nav-link unica-one" id="monthlyLightSummary" data-toggle="pill" href="#monthlyLightSummaryTab"
+                role="tab" aria-controls="monthlyLightSummaryTab" aria-selected="false">Light Summary</a>
+        </li>
+        <li class="nav-item mx-auto">
+            <a class="nav-link unica-one" id="monthtlyDeepSummary" data-toggle="pill" href="#monthlyDeepSummaryTab"
+                role="tab" aria-controls="monthlyDeepSummaryTab" aria-selected="false">Deep Summary</a>
+        </li>
+        <li class="nav-item mx-auto">
+            <a class="nav-link unica-one" id="monthlyNoCharts" data-toggle="pill" href="#monthlyNoChartsTab" role="tab"
+                aria-controls="monthlyNoChartsTab" aria-selected="false">No Charts</a>
+        </li>
+    </ul>
+</div>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="monthlyPieChartsTab" role="tabpanel" aria-labelledby="monthlyPieCharts">
+        Pie Charts test!
     </div>
-    <div class="row">
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="monthlyPieChartsTab" role="tabpanel" aria-labelledby="monthlyPieCharts">
-                Pie Charts test!
-            </div>
-            <div class="tab-pane fade" id="thisIncomeTab" role="tabpanel" aria-labelledby="thisIncome">
-                Income test!
-            </div>
-            <div class="tab-pane fade" id="thisExpensesTab" role="tabpanel" aria-labelledby="thisExpenses">
-                Expenses test!
-            </div>
-            <div class="tab-pane fade" id="monthlyDetailedExpensesTab" role="tabpanel" aria-labelledby="monthlyDetailedExpenses">
-                Detailed Expenses test!
-            </div>
-            <div class="tab-pane fade" id="monthlyLightSummaryTab" role="tabpanel" aria-labelledby="monthlyLightSummary">
-                Light Summary test!
-            </div>
-            <div class="tab-pane fade" id="monthlyDeepSummaryTab" role="tabpanel" aria-labelledby="monthlyDeepSummary">
-                Deep Summary test!
-            </div>
-            <div class="tab-pane fade" id="monthlyNoChartsTab" role="tabpanel" aria-labelledby="monthlyNoCharts">
-                No Charts test!
-            </div>
-        </div>
+    <div class="tab-pane fade" id="thisIncomeTab" role="tabpanel" aria-labelledby="thisIncome">
+        Income test!
+    </div>
+    <div class="tab-pane fade" id="thisExpensesTab" role="tabpanel" aria-labelledby="thisExpenses">
+        Expenses test!
+    </div>
+    <div class="tab-pane fade" id="monthlyDetailedExpensesTab" role="tabpanel"
+        aria-labelledby="monthlyDetailedExpenses">
+        Detailed Expenses test!
+    </div>
+    <div class="tab-pane fade" id="monthlyLightSummaryTab" role="tabpanel" aria-labelledby="monthlyLightSummary">
+        Light Summary test!
+    </div>
+    <div class="tab-pane fade" id="monthlyDeepSummaryTab" role="tabpanel" aria-labelledby="monthlyDeepSummary">
+        Deep Summary test!
+    </div>
+    <div class="tab-pane fade" id="monthlyNoChartsTab" role="tabpanel" aria-labelledby="monthlyNoCharts">
+        <%= render "pages/monthlyBudget/charts/monthly-no-charts" %>
     </div>
 </div>

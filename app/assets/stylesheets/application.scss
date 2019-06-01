@@ -36,9 +36,10 @@
  }
  
  .unica-one {
-     font-family: 'Unica One', cursive, 'Open Sans', sans-serif;
+     font-family: 'Unica One';
      text-transform: uppercase;
  }
+
  
  /* ------------------------ */
  /*          BUTTONS         */
@@ -134,6 +135,17 @@
  
  .monthly-yearly-tab:hover{
      color: #000;
+ }
+
+ /*----------------------------*/
+ /*           TABLES           */
+ /*----------------------------*/
+ .table-heading{
+    font-size: 150%;
+}
+
+ .table-sub-heading{
+     font-size: 120%;
  }
 
  /* ----------------------------------------------------------*/
