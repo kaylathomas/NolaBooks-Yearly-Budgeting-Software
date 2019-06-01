@@ -1,0 +1,628 @@
+<div class="accordion" id="marchAccordion">
+    <h2 class="unica-one text-orange"><u>march</u></h2>
+    <div class="border-top border-bottom border-info my-1" id="headingTen">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen"
+                id="marchIncomeCollapse">
+                <i class="fas fa-minus text-info"></i> Income
+            </button>
+        </h2>
+        <div id="collapseTen" class="collapse show" aria-labelledby="headingTen">
+            <div class="card-body border-bottom border-info">
+
+                <!-- INSIDE OF INCOME ACCORDION -->
+                <form>
+                    <div class="form-row">
+                        <div class="col-7">
+                            <label>Net Income:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchNet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Rate Of Pay:</label>
+                            <select class="form-control" id="marchFreq">
+                                <option>Weekly</option>
+                                <option>Bi-Weekly</option>
+                                <option>Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="marchAddIncome"
+                            class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Income <i class="fas fa-plus"></i></button>
+                        <button type="button" id="marchAddIncomeToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i>
+                        </button>
+                        <button type="button"
+                            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                            <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingEleven">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven"
+                id="marchSavingsCollapse">
+                <i class="fas fa-minus text-info"></i> Savings
+            </button>
+        </h2>
+        <div id="collapseEleven" class="collapse show" aria-labelledby="headingEleven">
+            <div class="card-body border-bottom border-info">
+                <div class="form-row">
+                    <div class="col">
+                        <label>Savings(General):</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchSavings">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Emergency Fund:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchEmergency">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>401k:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="march401k">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Investments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchInvestments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Retirement:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchRetirement">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="marchAddSavings" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Savings
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="marchSavingsToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingTwelve">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                <i class="fas fa-minus text-info"></i> Expenses
+            </button>
+        </h2>
+        <div id="collapseTwelve" class="collapse show" aria-labelledby="headingTwelve">
+            <div class="card-body border-info">
+                <div class="container my-3">
+                    <hr />
+                    <h3 class="unica-one">Home Expenses</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Rent:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchRent">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Mortgage:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchMortgage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Repair/Maintinence:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchRepair">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cable/TV:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchCable">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Home Insurance:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchHomeInsurance">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>HOA Fees:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchHOA">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Internet:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchInternet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cellphone:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchCellphone">
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="unica-one">UTILITIES</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Water:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchWater">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Gas:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchGas">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Electricity:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="marchElectricity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="marchAddHomeExpenses"
+                            class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Expenses <i class="fas fa-plus"></i></button>
+                        <button type="button" id="marchAddHomeExpensesToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i></button>
+                        <button type="button"
+                            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                            <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <hr />
+
+                <h3 class="unica-one">Debt & Loans</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Credit Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchCreditCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Student Loans:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchStudentLoans">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Medical Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchMedicalDebt">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Tax Payments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchTaxPayments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Store Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchStoreCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Personal Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchPersonalDebt">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="marchAddDebts" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="marchAddDebtsToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Transportation</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Car Payment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchCarPayment">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Insurance:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchCarInsurance">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Gas:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchCarGas">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Repairs:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchCarRepairs">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Parking & Tolls:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchParking">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Public Transit:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchPublicTransit">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="marchAddTransportation"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="marchAddTransportationToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All<i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Medical Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>Health Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchHealthInsurance">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Copays:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchCopays">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Prescriptions:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchPrescriptions">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Life Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchLifeInsurance">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="marchAddMedical" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="marchAddMedicalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Educational Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>School Supplies:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchSchoolSupplies">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Meal Plan:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchMealPlan">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Tuition:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchTuition">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Textbooks:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="marchTextbooks">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="marchAddEducational"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="marchAddEducationalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Monthly Food & Personal</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Groceries/Household Purchases:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchGroceries">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Meals Out:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchMealsOut">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Clothing:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchClothing">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Entertainment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchEntertainment">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Pet Supplies:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchPet">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Hobbies & Sports:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchHobbies">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Charitable Donations:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchCharitableDonations">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Subscriptions:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="marchSubscriptions">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="marchAddFoodAndPersonal"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="marchAddFoodAndPersonalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">One Time Expenses</h3>
+                <hr />
+                <div class="text-center">
+                    <button type="button" id="marchAddOneTime" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

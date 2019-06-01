@@ -1,0 +1,626 @@
+<div class="accordion" id="augustAccordion">
+    <h2 class="unica-one text-orange"><u>august</u></h2>
+    <div class="border-top border-bottom border-info my-1" id="headingTwentyFive">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseTwentyFive" aria-expanded="true" aria-controls="collapseTwentyFive"
+                id="augustIncomeCollapse">
+                <i class="fas fa-minus text-info"></i> Income
+            </button>
+        </h2>
+        <div id="collapseTwentyFive" class="collapse show" aria-labelledby="headingTwentyFive">
+            <div class="card-body border-bottom border-info">
+
+                <!-- INSIDE OF INCOME ACCORDION -->
+                <form>
+                    <div class="form-row">
+                        <div class="col-7">
+                            <label>Net Income:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustNet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Rate Of Pay:</label>
+                            <select class="form-control" id="augustFreq">
+                                <option>Weekly</option>
+                                <option>Bi-Weekly</option>
+                                <option>Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="augustAddIncome" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Income <i class="fas fa-plus"></i></button>
+                        <button type="button" id="augustAddIncomeToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i>
+                            <button type="button"
+                                class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                                <i class="fas fa-paper-plane"></i></button>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingTwentySix">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseTwentySix" aria-expanded="true" aria-controls="collapseTwentySix"
+                id="augustSavingsCollapse">
+                <i class="fas fa-minus text-info"></i> Savings
+            </button>
+        </h2>
+        <div id="collapseTwentySix" class="collapse show" aria-labelledby="headingTwentySix">
+            <div class="card-body border-bottom border-info">
+                <div class="form-row">
+                    <div class="col">
+                        <label>Savings(General):</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustSavings">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Emergency Fund:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustEmergency">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>401k:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="august401k">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Investments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustInvestments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Retirement:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustRetirement">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="augustAddSavings" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Savings
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="augustSavingsToAll" class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add
+                        to All <i class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingTwentySeven">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseTwentySeven" aria-expanded="true" aria-controls="collapseTwentySeven">
+                <i class="fas fa-minus text-info"></i> Expenses
+            </button>
+        </h2>
+        <div id="collapseTwentySeven" class="collapse show" aria-labelledby="headingTwentySeven">
+            <div class="card-body border-info">
+                <div class="container my-3">
+                    <hr />
+                    <h3 class="unica-one">Home Expenses</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Rent:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustRent">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Mortgage:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustMortgage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Repair/Maintinence:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustRepair">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cable/TV:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustCable">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Home Insurance:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustHomeInsurance">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>HOA Fees:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustHOA">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Internet:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustInternet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cellphone:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustCellphone">
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="unica-one">UTILITIES</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Water:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustWater">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Gas:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustGas">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Electricity:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="augustElectricity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="augustAddHomeExpenses"
+                            class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Expenses <i class="fas fa-plus"></i></button>
+                        <button type="button" id="augustAddHomeExpensesToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i></button>
+                        <button type="button"
+                            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                            <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <hr />
+
+                <h3 class="unica-one">Debt & Loans</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Credit Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustCreditCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Student Loans:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustStudentLoans">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Medical Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustMedicalDebt">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Tax Payments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustTaxPayments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Store Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustStoreCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Personal Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustPersonalDebt">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="augustAddDebts" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="augustAddDebtsToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Transportation</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Car Payment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustCarPayment">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Insurance:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustCarInsurance">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Gas:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustCarGas">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Repairs:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustCarRepairs">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Parking & Tolls:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustParking">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Public Transit:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustPublicTransit">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="augustAddTransportation"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="augustAddTransportationToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All<i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Medical Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>Health Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustHealthInsurance">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Copays:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustCopays">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Prescriptions:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustPrescriptions">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Life Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustLifeInsurance">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="augustAddMedical" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="augustAddMedicalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Educational Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>School Supplies:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustSchoolSupplies">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Meal Plan:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustMealPlan">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Tuition:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustTuition">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Textbooks:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="augustTextbooks">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="augustAddEducational" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="augustAddEducationalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Monthly Food & Personal</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Groceries/Household Purchases:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustGroceries">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Meals Out:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustMealsOut">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Clothing:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustClothing">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Entertainment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustEntertainment">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Pet Supplies:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustPet">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Hobbies & Sports:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustHobbies">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Charitable Donations:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustCharitableDonations">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Subscriptions:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="augustSubscriptions">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="augustAddFoodAndPersonal"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="augustAddFoodAndPersonalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">One Time Expenses</h3>
+                <hr />
+                <div class="text-center">
+                    <button type="button" id="augustAddOneTime" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

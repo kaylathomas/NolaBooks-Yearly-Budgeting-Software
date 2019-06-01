@@ -1,0 +1,627 @@
+<div class="accordion" id="mayAccordion">
+    <h2 class="unica-one text-orange"><u>may</u></h2>
+    <div class="border-top border-bottom border-info my-1" id="headingSixteen">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen"
+                id="mayIncomeCollapse">
+                <i class="fas fa-minus text-info"></i> Income
+            </button>
+        </h2>
+        <div id="collapseSixteen" class="collapse show" aria-labelledby="headingSixteen">
+            <div class="card-body border-bottom border-info">
+
+                <!-- INSIDE OF INCOME ACCORDION -->
+                <form>
+                    <div class="form-row">
+                        <div class="col-7">
+                            <label>Net Income:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayNet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Rate Of Pay:</label>
+                            <select class="form-control" id="mayFreq">
+                                <option>Weekly</option>
+                                <option>Bi-Weekly</option>
+                                <option>Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="mayAddIncome" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Income <i class="fas fa-plus"></i></button>
+                        <button type="button" id="mayAddIncomeToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i>
+                        </button>
+                        <button type="button"
+                            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                            <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingSeventeen">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseSeventeen" aria-expanded="true" aria-controls="collapseSeventeen"
+                id="maySavingsCollapse">
+                <i class="fas fa-minus text-info"></i> Savings
+            </button>
+        </h2>
+        <div id="collapseSeventeen" class="collapse show" aria-labelledby="headingSeventeen">
+            <div class="card-body border-bottom border-info">
+                <div class="form-row">
+                    <div class="col">
+                        <label>Savings(General):</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="maySavings">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Emergency Fund:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayEmergency">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>401k:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="may401k">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Investments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayInvestments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Retirement:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayRetirement">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="mayAddSavings" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Savings
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="maySavingsToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingEighteen">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseEighteen" aria-expanded="true" aria-controls="collapseEighteen">
+                <i class="fas fa-minus text-info"></i> Expenses
+            </button>
+        </h2>
+        <div id="collapseEighteen" class="collapse show" aria-labelledby="headingEighteen">
+            <div class="card-body border-info">
+                <div class="container my-3">
+                    <hr />
+                    <h3 class="unica-one">Home Expenses</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Rent:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayRent">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Mortgage:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayMortgage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Repair/Maintinence:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayRepair">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cable/TV:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayCable">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Home Insurance:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayHomeInsurance">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>HOA Fees:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayHOA">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Internet:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayInternet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cellphone:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayCellphone">
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="unica-one">UTILITIES</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Water:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayWater">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Gas:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayGas">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Electricity:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="mayElectricity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="mayAddHomeExpenses"
+                            class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Expenses <i class="fas fa-plus"></i></button>
+                        <button type="button" id="mayAddHomeExpensesToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i></button>
+                        <button type="button"
+                            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                            <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <hr />
+
+                <h3 class="unica-one">Debt & Loans</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Credit Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayCreditCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Student Loans:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayStudentLoans">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Medical Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayMedicalDebt">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Tax Payments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayTaxPayments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Store Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayStoreCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Personal Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayPersonalDebt">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="mayAddDebts" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="mayAddDebtsToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Transportation</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Car Payment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayCarPayment">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Insurance:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayCarInsurance">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Gas:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayCarGas">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Repairs:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayCarRepairs">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Parking & Tolls:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayParking">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Public Transit:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayPublicTransit">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="mayAddTransportation"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="mayAddTransportationToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All<i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Medical Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>Health Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayHealthInsurance">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Copays:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayCopays">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Prescriptions:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayPrescriptions">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Life Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayLifeInsurance">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="mayAddMedical" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="mayAddMedicalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Educational Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>School Supplies:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="maySchoolSupplies">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Meal Plan:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayMealPlan">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Tuition:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayTuition">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Textbooks:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="mayTextbooks">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="mayAddEducational"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="mayAddEducationalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Monthly Food & Personal</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Groceries/Household Purchases:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayGroceries">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Meals Out:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayMealsOut">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Clothing:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayClothing">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Entertainment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayEntertainment">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Pet Supplies:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayPet">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Hobbies & Sports:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayHobbies">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Charitable Donations:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="mayCharitableDonations">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Subscriptions:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="maySubscriptions">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="mayAddFoodAndPersonal"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="mayAddFoodAndPersonalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">One Time Expenses</h3>
+                <hr />
+                <div class="text-center">
+                    <button type="button" id="mayAddOneTime" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

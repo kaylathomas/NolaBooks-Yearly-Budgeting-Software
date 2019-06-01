@@ -1,0 +1,50 @@
+<form onSubmit="return false;">
+    <div class="form-row">
+        <div class="col-7">
+            <label>Net Income:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number" class="form-control" id="monthlyNet">
+            </div>
+        </div>
+        <div class="col">
+            <label>Current Month:</label>
+            <select class="custom-select current-month" id="thisMonthNow">
+                <option selected>Choose...</option>
+                <option value="Januart">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+        </div>
+        <div class="col">
+            <label>Frequency Of Pay:</label>
+            <select class="form-control monthly-freq" id="monthlyFreq">
+                <option class="weekly-freq">Weekly</option>
+                <option class="bi-weekly-freq" selected="selected">Bi-Weekly</option>
+                <option class="monthly-freq">Monthly</option>
+            </select>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="button" id="monthlyAddIncome" class="mx-auto btn btn-info w-50 btn-block mt-3 unica-one">Add
+            Income <i class="fas fa-plus"></i></button>
+        <button type="button" id="monthlyIncomeYearBudget"
+            class="mx-auto btn btn-orange w-50 btn-block mt-3 unica-one">Transfer to Yearly
+            Budget <i class="fas fa-sign-in-alt"></i>
+        </button>
+        <button type="button" type="button"
+            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one monthly-submit-button">Submit <i
+                class="fas fa-paper-plane"></i></button>
+    </div>
+</form>

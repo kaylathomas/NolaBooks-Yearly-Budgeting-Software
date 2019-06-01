@@ -1,0 +1,625 @@
+<div class="accordion" id="juneAccordion">
+    <h2 class="unica-one text-orange"><u>june</u></h2>
+    <div class="border-top border-bottom border-info my-1" id="headingNineteen">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseNineteen" aria-expanded="true" aria-controls="collapseNineteen"
+                id="juneIncomeCollapse">
+                <i class="fas fa-minus text-info"></i> Income
+            </button>
+        </h2>
+        <div id="collapseNineteen" class="collapse show" aria-labelledby="headingNineteen">
+            <div class="card-body border-bottom border-info">
+
+                <!-- INSIDE OF INCOME ACCORDION -->
+                <form>
+                    <div class="form-row">
+                        <div class="col-7">
+                            <label>Net Income:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneNet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Rate Of Pay:</label>
+                            <select class="form-control" id="juneFreq">
+                                <option>Weekly</option>
+                                <option>Bi-Weekly</option>
+                                <option>Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="juneAddIncome" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Income <i class="fas fa-plus"></i></button>
+                        <button type="button" id="juneAddIncomeToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i>
+                        </button>
+                        <button type="button"
+                            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                            <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingTwenty">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseTwenty" aria-expanded="true" aria-controls="collapseTwenty"
+                id="juneSavingsCollapse">
+                <i class="fas fa-minus text-info"></i> Savings
+            </button>
+        </h2>
+        <div id="collapseTwenty" class="collapse show" aria-labelledby="headingTwenty">
+            <div class="card-body border-bottom border-info">
+                <div class="form-row">
+                    <div class="col">
+                        <label>Savings(General):</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneSavings">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Emergency Fund:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneEmergency">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>401k:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="june401k">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Investments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneInvestments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Retirement:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneRetirement">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="juneAddSavings" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Savings
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="juneSavingsToAll" class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add
+                        to All <i class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-top border-bottom border-info my-1" id="headingTwentyOne">
+        <h2 class="mb-0 border-top border-bottom border-info">
+            <button class="btn btn-link collapsed text-info collapse-heading" type="button" data-toggle="collapse"
+                data-target="#collapseTwentyOne" aria-expanded="true" aria-controls="collapseTwentyOne">
+                <i class="fas fa-minus text-info"></i> Expenses
+            </button>
+        </h2>
+        <div id="collapseTwentyOne" class="collapse show" aria-labelledby="headingTwentyOne">
+            <div class="card-body border-info">
+                <div class="container my-3">
+                    <hr />
+                    <h3 class="unica-one">Home Expenses</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Rent:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneRent">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Mortgage:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneMortgage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Repair/Maintinence:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneRepair">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cable/TV:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneCable">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Home Insurance:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneHomeInsurance">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>HOA Fees:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneHOA">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Internet:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneInternet">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Cellphone:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneCellphone">
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <h3 class="unica-one">UTILITIES</h3>
+                    <hr />
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Water:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneWater">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Gas:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneGas">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label>Electricity:</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="juneElectricity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="juneAddHomeExpenses"
+                            class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                            Expenses <i class="fas fa-plus"></i></button>
+                        <button type="button" id="juneAddHomeExpensesToAll"
+                            class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                                class="fas fa-sign-in-alt"></i></button>
+                        <button type="button"
+                            class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit
+                            <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <hr />
+
+                <h3 class="unica-one">Debt & Loans</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Credit Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneCreditCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Student Loans:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneStudentLoans">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Medical Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneMedicalDebt">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Tax Payments:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneTaxPayments">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Store Cards:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneStoreCards">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Personal Debt:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="junePersonalDebt">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="juneAddDebts" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="juneAddDebtsToAll" class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add
+                        to All <i class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Transportation</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Car Payment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneCarPayment">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Insurance:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneCarInsurance">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Gas:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneCarGas">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Car Repairs:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneCarRepairs">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Parking & Tolls:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneParking">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Public Transit:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="junePublicTransit">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="juneAddTransportation"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="juneAddTransportationToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All<i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Medical Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>Health Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneHealthInsurance">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Copays:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneCopays">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Prescriptions:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="junePrescriptions">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Life Insurance:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneLifeInsurance">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="juneAddMedical" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="juneAddMedicalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Educational Expenses</h3>
+                <hr />
+                <div class="form-row">
+                    <label>School Supplies:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneSchoolSupplies">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Meal Plan:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneMealPlan">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Tuition:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneTuition">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Textbooks:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="juneTextbooks">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="juneAddEducational" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="juneAddEducationalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">Monthly Food & Personal</h3>
+                <hr />
+                <div class="form-row">
+                    <div class="col">
+                        <label>Groceries/Household Purchases:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneGroceries">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Meals Out:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneMealsOut">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Clothing:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneClothing">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Entertainment:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneEntertainment">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Pet Supplies:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="junePet">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Hobbies & Sports:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneHobbies">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Charitable Donations:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneCharitableDonations">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label>Subscriptions:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="number" class="form-control" id="juneSubscriptions">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" id="juneAddFoodAndPersonal"
+                        class="mx-auto btn btn-info w-50 mt-3 unica-one">Add Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" id="juneAddFoodAndPersonalToAll"
+                        class="mx-auto btn btn-orange w-50 mt-3 unica-one">Add to All <i
+                            class="fas fa-sign-in-alt"></i></button>
+                    <button type="button"
+                        class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one yearly-submit-button">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="container my-3">
+                <hr />
+                <h3 class="unica-one">One Time Expenses</h3>
+                <hr />
+                <div class="text-center">
+                    <button type="button" id="juneAddOneTime" class="mx-auto btn btn-info w-50 mt-3 unica-one">Add
+                        Expense
+                        <i class="fas fa-plus"></i></button>
+                    <button type="button" class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one">Submit <i
+                            class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

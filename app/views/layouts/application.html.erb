@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BudgetPal: Monthly Budgeting Calculator</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Saira|Shadows+Into+Light|Special+Elite|Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag 'monthlyBudget/monthlyLogic' %>
+    <%= javascript_include_tag 'general/localStorage' %>
+    <%= javascript_include_tag 'general/tabDisplay' %>
+    <meta name="turbolinks-cache-control" content="no-preview">
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

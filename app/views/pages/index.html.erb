@@ -1,0 +1,351 @@
+<div class="container">
+    <div class="row">
+        <div class="card border-orange mx-auto w-100 mt-4">
+            <div class="card-header bg-orange">
+                <h1 class="display-4 font-weight-lighter text-center text-white my-2">
+                    BudgetPal <i class="fas fa-calculator"></i></h1>
+            </div>
+            <div class="card-body calculator-tab-window">
+                <ul class="nav nav-tabs navbar-tab-headers" id="myTab" role="tablist">
+                    <li class="nav-item mx-auto w-25">
+                        <a class="nav-link active text-center text-dark tab-heading" id="tab1" data-toggle="tab"
+                            href="#tab1Content" role="tab" aria-controls="tab1Content" aria-selected="true">Monthly
+                            Budget <i class="fas fa-dollar-sign"></i></a>
+                    </li>
+                    <li class="nav-item mx-auto w-25">
+                        <a class="nav-link text-center text-dark tab-heading" id="tab2" data-toggle="tab"
+                            href="#tab2Content" role="tab" aria-controls="tab2Content" aria-selected="false">Monthly
+                            Projection <i class="far fa-calendar-alt"></i></a>
+                    </li>
+                    <li class="nav-item mx-auto w-25">
+                        <a class="nav-link text-center text-dark tab-heading" id="tab3" data-toggle="tab"
+                            href="#tab3Content" role="tab" aria-controls="tab3Content" aria-selected="false">Yearly
+                            Budget <i class="fas fa-chart-pie"></i></a>
+                    </li>
+                    <li class="nav-item mx-auto w-25">
+                        <a class="nav-link text-center text-dark tab-heading" id="tab4" data-toggle="tab"
+                            href="#tab4Content" role="tab" aria-controls="tab4Content" aria-selected="false">Yearly
+                            Projection <i class="fas fa-signal"></i></a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!-------------------------------->
+                    <!--        TAB 1 CONTENT       -->
+                    <!-------------------------------->
+                    <div class="tab-pane fade show active" id="tab1Content" role="tabpanel" aria-labelledby="tab1">
+                        <div id="monthlyAlertField"></div>
+                        <div class="accordion" id="monthlyBudgetAccordion">
+                            <div class="border-top border-bottom border-info my-1" id="headingOne">
+                                <h2 class="mb-0 border-top border-bottom border-info">
+                                    <button class="btn btn-link text-info collapse-heading" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne" id="monthlyIncomeCollapse">
+                                        <i class="fas fa-minus"></i> Income
+                                    </button>
+                                </h2>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                    <div class="card-body border-bottom border-info income-collapse">
+
+                                        <!-- income-collapse.html.erb PARTIAL -->
+                                        <%= render "pages/monthlyBudget/collapses/income-collapse" %>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-bottom border-info my-1" id="headingTwo">
+                                <h2 class="mb-0 border-top border-bottom border-info">
+                                    <button class="btn btn-link collapsed text-info collapse-heading" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo" id="monthlySavingsCollapse">
+                                        <i class="fas fa-minus"></i> Savings
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
+                                    <div class="card-body border-bottom border-info savings-collapse">
+
+                                        <!-- savings-collapse.html.erb PARTIAL -->
+                                        <%= render "pages/monthlyBudget/collapses/savings-collapse" %>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-bottom border-info my-1" id="headingThree">
+                                <h2 class="mb-0 border-top border-bottom border-info">
+                                    <button class="btn btn-link collapsed text-info collapse-heading" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        <i class="fas fa-minus"></i> Expenses
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
+                                    <div class="card-body border-info expenses-collapse">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="nav flex-column nav-pills sticky-top unica-one"
+                                                    id="monthlyExpensesTab" role="tablist" aria-orientation="vertical">
+                                                    <a class="nav-link monthly-yearly-tab active" id="monthlyHomeTab"
+                                                        data-toggle="list" href="#monthlyHomeDisplay" role="tab"
+                                                        aria-controls="monthlyHomeDisplay" aria-selected="true">Home
+                                                        <i class="fas fa-home"></i></a>
+                                                    <a class="nav-link monthly-yearly-tab" id="monthlyDebtTab"
+                                                        data-toggle="list" href="#monthlyDebtDisplay" role="tab"
+                                                        aria-controls="monthlyDebtDisplay" aria-selected="false">Debt &
+                                                        Loans <i class="far fa-credit-card"></i></a>
+                                                    <a class="nav-link monthly-yearly-tab" id="monthlyTransportationTab"
+                                                        data-toggle="list" href="#monthlyTransportationDisplay"
+                                                        role="tab" aria-controls="monthlyTransportationDisplay"
+                                                        aria-selected="false">Transportation <i
+                                                            class="fas fa-subway"></i></a>
+                                                    <a class="nav-link monthly-yearly-tab" id="monthlyMedicalTab"
+                                                        data-toggle="list" href="#monthlyMedicalDisplay" role="tab"
+                                                        aria-controls="monthlyMedicalDisplay"
+                                                        aria-selected="false">Medical <i
+                                                            class="fas fa-briefcase-medical"></i></a>
+                                                    <a class="nav-link monthly-yearly-tab" id="monthlyEducationalTab"
+                                                        data-toggle="list" href="#monthlyEducationalDisplay" role="tab"
+                                                        aria-controls="monthlyEducationalDisplay"
+                                                        aria-selected="false">Educational <i
+                                                            class="fas fa-book-open"></i></a>
+                                                    <a class="nav-link monthly-yearly-tab"
+                                                        id="monthlyFoodAndPersonalTab" data-toggle="list"
+                                                        href="#monthlyFoodAndPersonalDisplay" role="tab"
+                                                        aria-controls="monthlyFoodAndPersonalDisplay"
+                                                        aria-selected="false">Food and
+                                                        Personal <i class="fas fa-wifi"></i></a>
+                                                    <a class="nav-link monthly-yearly-tab" id="monthlyOneTimeTab"
+                                                        data-toggle="list" href="#monthlyOneTimeDisplay" role="tab"
+                                                        aria-controls="monthlyOneTimeDisplay"
+                                                        aria-selected="false">One-Time Expenses <i
+                                                            class="fas fa-cocktail"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="tab-content" id="monthlyExpensesTabContent">
+                                                    <!---------------------------------------------->
+                                                    <!--          MONTHLY BUDGET DISPLAYS         -->
+                                                    <!---------------------------------------------->
+
+                                                    <div class="tab-pane fade show active" id="monthlyHomeDisplay"
+                                                        role="tabpanel" aria-labelledby="monthlyHomeTab">
+
+                                                        <!-- monthly-home-display.html.erb PARTIAL -->
+                                                        <%= render "pages/monthlyBudget/monthly-home-display" %>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="monthlyDebtDisplay" role="tabpanel"
+                                                        aria-labelledby="monthlyDebtTab">
+
+                                                        <!-- monthly-debt-display.html.erb PARTIAL -->
+                                                        <%= render "pages/monthlyBudget/monthly-debt-display" %>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="monthlyTransportationDisplay"
+                                                        role="tabpanel" aria-labelledby="monthlyTransportationTab">
+
+                                                        <!-- monthly-transportation-display.html.erb PARTIAL -->
+                                                        <%= render "pages/monthlyBudget/monthly-transportation-display" %>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="monthlyMedicalDisplay"
+                                                        role="tabpanel" aria-labelledby="monthlyMedicalTab">
+
+                                                        <!-- monthly-medical-display.html.erb PARTIAL -->
+                                                        <%= render "pages/monthlyBudget/monthly-medical-display" %>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="monthlyEducationalDisplay"
+                                                        role="tabpanel" aria-labelledby="monthlyEducationalTab">
+
+                                                        <!-- monthly-educational-display.html.erb PARTIAL -->
+                                                        <%= render "pages/monthlyBudget/monthly-educational-display" %>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="monthlyFoodAndPersonalDisplay"
+                                                        role="tabpanel" aria-labelledby="monthlyFoodAndPersonalTab">
+
+                                                        <!-- monthly-food-and-personal-display.html.erb PARTIAL -->
+                                                        <%= render "pages/monthlyBudget/monthly-food-and-personal-display" %>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="monthlyOneTimeDisplay"
+                                                        role="tabpanel" aria-labelledby="monthlyOneTimeTab">
+
+                                                        <!-- monthly-one-time-display.html.erb PARTIAL -->
+                                                        <%= render "pages/monthlyBudget/monthly-one-time-display" %>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------->
+                    <!--        TAB 2 CONTENT       -->
+                    <!-------------------------------->
+
+                    <div class="tab-pane fade" id="tab2Content" role="tabpanel" aria-labelledby="tab2">
+
+                        <!-- tabContent2.html.erb PARTIAL -->
+                        <%= render "pages/monthlyBudget/tabContent2" %>
+                        
+                    </div>
+
+                    <!-------------------------------->
+                    <!--        TAB 3 CONTENT       -->
+                    <!-------------------------------->
+
+                    <div class="tab-pane fade my-3 position-sticky" id="tab3Content" role="tabpanel"
+                        aria-labelledby="tab3">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="nav flex-column nav-pills sticky-top unica-one" id="yearMonthsTab"
+                                    role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link monthly-yearly-tab active" id="yearlyJanuaryTab"
+                                        data-toggle="list" href="#yearlyJanuaryDisplay" role="tab"
+                                        aria-controls="yearlyJanuaryDisplay" aria-selected="true">January</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyFebruaryTab" data-toggle="list"
+                                        href="#yearlyFebruaryDisplay" role="tab" aria-controls="yearlyFebruaryDisplay"
+                                        aria-selected="false">February</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyMarchTab" data-toggle="list"
+                                        href="#yearlyMarchDisplay" role="tab" aria-controls="yearlyMarchDisplay"
+                                        aria-selected="false">March</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyAprilTab" data-toggle="list"
+                                        href="#yearlyAprilDisplay" role="tab" aria-controls="yearlyAprilDisplay"
+                                        aria-selected="false">April</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyMayTab" data-toggle="list"
+                                        href="#yearlyMayDisplay" role="tab" aria-controls="yearlyMayDisplay"
+                                        aria-selected="false">May</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyJuneTab" data-toggle="list"
+                                        href="#yearlyJuneDisplay" role="tab" aria-controls="yearlyJuneDisplay"
+                                        aria-selected="false">June</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyJulyTab" data-toggle="list"
+                                        href="#yearlyJulyDisplay" role="tab" aria-controls="yearlyJulyDisplay"
+                                        aria-selected="false">July</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyAugustTab" data-toggle="list"
+                                        href="#yearlyAugustDisplay" role="tab" aria-controls="yearlyAugustDisplay"
+                                        aria-selected="false">August</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlySeptemberTab" data-toggle="list"
+                                        href="#yearlySeptemberDisplay" role="tab" aria-controls="yearlySeptemberDisplay"
+                                        aria-selected="false">September</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyOctoberTab" data-toggle="list"
+                                        href="#yearlyOctoberDisplay" role="tab" aria-controls="yearlyOctoberDisplay"
+                                        aria-selected="false">October</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyNovemberTab" data-toggle="list"
+                                        href="#yearlyNovemberDisplay" role="tab" aria-controls="yearlyNovemberDisplay"
+                                        aria-selected="false">November</a>
+                                    <a class="nav-link monthly-yearly-tab" id="yearlyDecember" data-toggle="list"
+                                        href="#yearlyDecemberDisplay" role="tab" aria-controls="yearlyDecemberDisplay"
+                                        aria-selected="false">December</a>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="tab-content" id="yearMonthsTabContent">
+                                    <!--------------------------------------------->
+                                    <!--          YEARLY BUDGET DISPLAYS         -->
+                                    <!--------------------------------------------->
+
+                                    <div class="tab-pane fade show active" id="yearlyJanuaryDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyJanuaryTab">
+
+                                        <!-- january-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/1january/january-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyFebruaryDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyFebruaryTab">
+
+                                        <!-- february-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/2february/february-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyMarchDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyMarchTab">
+
+                                        <!-- march-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/3march/march-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyAprilDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyAprilTab">
+
+                                        <!-- april-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/4april/april-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyMayDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyMayTab">
+
+                                        <!-- may-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/5may/may-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyJuneDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyJuneTab">
+
+                                        <!-- june-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/6june/june-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyJulyDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyJulyTab">
+
+                                        <!-- july-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/7july/july-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyAugustDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyAugustTab">
+
+                                        <!-- august-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/8august/august-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlySeptemberDisplay" role="tabpanel"
+                                        aria-labelledby="yearlySeptemberTab">
+
+                                        <!-- september-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/9september/september-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyOctoberDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyOctoberTab">
+
+                                        <!-- october-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/10october/october-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyNovemberDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyNovemberTab">
+
+                                        <!-- november-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/11november/november-monthly-budget" %>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="yearlyDecemberDisplay" role="tabpanel"
+                                        aria-labelledby="yearlyDecemberTab">
+
+                                        <!-- december-monthly-budget.html.erb PARTIAL -->
+                                        <%= render "pages/yearlyBudget/12december/december-monthly-budget" %>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------->
+                    <!--        TAB 4 CONTENT       -->
+                    <!-------------------------------->
+
+                    <div class="tab-pane fade" id="tab4Content" role="tabpanel" aria-labelledby="tab4">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- ROW DIV -->
+</div><!-- CONTAINER DIV -->
