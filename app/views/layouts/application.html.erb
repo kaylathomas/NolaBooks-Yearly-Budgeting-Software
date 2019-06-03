@@ -14,13 +14,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "application" %>
-    <%= javascript_include_tag 'monthlyBudget/monthlyLogic' %>
-    <%= javascript_include_tag 'general/localStorage' %>
-    <%= javascript_include_tag 'general/tabDisplay' %>
     <meta name="turbolinks-cache-control" content="no-preview">
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag 'monthlyBudget/monthlyLogic' %>
+    <%= javascript_include_tag 'monthlyBudget/charts/monthlyPieCharts' %>
+    <%= javascript_include_tag 'monthlyBudget/charts/monthlyNoCharts' %>
+    <%= javascript_include_tag 'general/localStorage' %>
+    <%= javascript_include_tag 'general/tabDisplay' %>
   </body>
 </html>
