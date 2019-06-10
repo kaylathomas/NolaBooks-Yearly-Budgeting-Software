@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container monthly-expenses-container">
     <div class="row">
         <h1 class="monthly-title unica-one mx-auto underline text-info"></h1>
     </div>
@@ -6,49 +6,305 @@
         <h2 class="unica-one mx-auto underline">Monthly Expenses</h2>
     </div>
     <div class="row">
-        <h3 class="unica-one underline text-center">Savings</h3>
-    </div>
-    <div class="row">
-        <canvas id="monthlySavingsPieChart"></canvas>
-    </div>
-    <br/>
-    <div class="row">
-        <div class="col-6">
-            <h3 class="unica-one text-center underline">Home Expenses</h3>
-            <div class="monthly-home-expenses-pie-chart-container">
-            </div>
+        <div class="col-7">
+            <table class="table table-striped table-bordered table-sm table-hover">
+                <thead class="bg-info text-white">
+                    <tr class="unica-one table-sub-heading">
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Savings (General)</td>
+                        <td class="monthly-savings-general"></td>
+                    </tr>
+                    <tr>
+                        <td>Emergency</td>
+                        <td class="monthly-emergency"></td>
+                    </tr>
+                    <tr>
+                        <td>401k</td>
+                        <td class="monthly-401k"></td>
+                    </tr>
+                    <tr>
+                        <td>Investments</td>
+                        <td class="monthly-investments"></td>
+                    </tr>
+                    <tr>
+                        <td>Retirement</td>
+                        <td class="monthly-retirement"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="col-6">
-            <h3 class="unica-one text-center underline">Debt & Loans</h3>
-            <div class="monthly-debt-pie-chart-container">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <h3 class="unica-one text-center underline">Transportation</h3>
-            <div class="monthly-transportation-pie-chart-container">
-            </div>
-        </div>
-        <div class="col-6">
-            <h3 class="unica-one text-center underline">Medical</h3>
-            <div class="monthly-medical-pie-chart-container">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <h3 class="unica-one text-center underline">Educational</h3>
-            <div class="monthly-educational-pie-chart-container">
-            </div>
-        </div>
-        <div class="col-6">
-            <h3 class="unica-one text-center underline">Food & Personal</h3>
-            <div class="monthly-food-and-personal-pie-chart-container">
-            </div>
+        <div class="col">
+            <h3 class="unica-one underline text-center">Savings</h3>
+            <canvas id="monthlySavingsPieChart"></canvas>
         </div>
     </div>
     <div class="row">
-        <h3 class="unica-one text-center underline">One-Time Expenses</h3>
+        <div class="col-6">
+            <table class="table table-striped table-bordered table-sm table-hover">
+                <thead class="bg-info text-white">
+                    <tr class="unica-one table-sub-heading">
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rent</td>
+                        <td class="monthly-rent"></td>
+                    </tr>
+                    <tr>
+                        <td>Mortgage</td>
+                        <td class="monthly-mortgage"></td>
+                    </tr>
+                    <tr>
+                        <td>Repair/Maintenance</td>
+                        <td class="monthly-repair"></td>
+                    </tr>
+                    <tr>
+                        <td>Cable/TV</td>
+                        <td class="monthly-cable"></td>
+                    </tr>
+                    <tr>
+                        <td>Home Insurance</td>
+                        <td class="monthly-home-insurance"></td>
+                    </tr>
+                    <tr>
+                        <td>HOA Fees</td>
+                        <td class="monthly-HOA"></td>
+                    </tr>
+                    <tr>
+                        <td>Internet</td>
+                        <td class="monthly-internet"></td>
+                    </tr>
+                    <tr>
+                        <td>Cellphone</td>
+                        <td class="monthly-cellphone"></td>
+                    </tr>
+                    <tr>
+                        <td>Water</td>
+                        <td class="monthly-water"></td>
+                    </tr>
+                    <tr>
+                        <td>Gas</td>
+                        <td class="monthly-gas"></td>
+                    </tr>
+                    <tr>
+                        <td>Electricity</td>
+                        <td class="monthly-electricity"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3 class="unica-one underline text-center">Home Expenses</h3>
+            <canvas id="monthlyHomePieChart"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <table class="table table-striped table-bordered table-sm table-hover">
+                <thead class="bg-info text-white">
+                    <tr class="unica-one table-sub-heading">
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Credit Cards</td>
+                        <td class="monthly-credit-cards"></td>
+                    </tr>
+                    <tr>
+                        <td>Student Loans</td>
+                        <td class="monthly-student-loans"></td>
+                    </tr>
+                    <tr>
+                        <td>Medical Debt</td>
+                        <td class="monthly-medical-debt"></td>
+                    </tr>
+                    <tr>
+                        <td>Tax Payments</td>
+                        <td class="monthly-tax-payments"></td>
+                    </tr>
+                    <tr>
+                        <td>Store Cards</td>
+                        <td class="monthly-store-cards"></td>
+                    </tr>
+                    <tr>
+                        <td>Personal Debt</td>
+                        <td class="monthly-personal-debt"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3 class="unica-one underline text-center">Debt & Loans</h3>
+            <canvas id="monthlyDebtPieChart"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <table class="table table-striped table-bordered table-sm table-hover">
+                <thead class="bg-info text-white">
+                    <tr class="unica-one table-sub-heading">
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Car Payment</td>
+                        <td class="monthly-car-payment"></td>
+                    </tr>
+                    <tr>
+                        <td>Car Insurance</td>
+                        <td class="monthly-car-insurance"></td>
+                    </tr>
+                    <tr>
+                        <td>Gas</td>
+                        <td class="monthly-car-gas"></td>
+                    </tr>
+                    <tr>
+                        <td>Car Repairs</td>
+                        <td class="monthly-car-repairs"></td>
+                    </tr>
+                    <tr>
+                        <td>Parking & Tolls</td>
+                        <td class="monthly-parking"></td>
+                    </tr>
+                    <tr>
+                        <td>Public Transit</td>
+                        <td class="monthly-public-transit"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3 class="unica-one underline text-center">Transportation</h3>
+            <canvas id="monthlyTransportationPieChart"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <table class="table table-striped table-bordered table-sm table-hover">
+                <thead class="bg-info text-white">
+                    <tr class="unica-one table-sub-heading">
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Health Insurance</td>
+                        <td class="monthly-health-insurance"></td>
+                    </tr>
+                    <tr>
+                        <td>Copays</td>
+                        <td class="monthly-copays"></td>
+                    </tr>
+                    <tr>
+                        <td>Prescriptions</td>
+                        <td class="monthly-prescriptions"></td>
+                    </tr>
+                    <tr>
+                        <td>Life Insurance</td>
+                        <td class="monthly-life-insurance"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3 class="unica-one underline text-center">Medical</h3>
+            <canvas id="monthlyMedicalPieChart"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <table class="table table-striped table-bordered table-sm table-hover">
+                <thead class="bg-info text-white">
+                    <tr class="unica-one table-sub-heading">
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>School Supplies</td>
+                        <td class="monthly-school-supplies"></td>
+                    </tr>
+                    <tr>
+                        <td>Meal Plan</td>
+                        <td class="monthly-meal-plan"></td>
+                    </tr>
+                    <tr>
+                        <td>Tuition</td>
+                        <td class="monthly-tuition"></td>
+                    </tr>
+                    <tr>
+                        <td>Textbooks</td>
+                        <td class="monthly-textbooks"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3 class="unica-one underline text-center">Educational</h3>
+            <canvas id="monthlyEducationalPieChart"></canvas>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <table class="table table-striped table-bordered table-sm table-hover">
+                <thead class="bg-info text-white">
+                    <tr class="unica-one table-sub-heading">
+                        <th scope="col">Type</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Groceries/Household Purchases</td>
+                        <td class="monthly-groceries"></td>
+                    </tr>
+                    <tr>
+                        <td>Meals Out</td>
+                        <td class="monthly-meals-out"></td>
+                    </tr>
+                    <tr>
+                        <td>Clothing</td>
+                        <td class="monthly-clothing"></td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td class="monthly-entertainment"></td>
+                    </tr>
+                    <tr>
+                        <td>Pet Supplies</td>
+                        <td class="monthly-pet"></td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies & Sports</td>
+                        <td class="monthly-hobbies"></td>
+                    </tr>
+                    <tr>
+                        <td>Charitable Donations</td>
+                        <td class="monthly-charitable"></td>
+                    </tr>
+                    <tr>
+                        <td>Subscriptions</td>
+                        <td class="monthly-subscriptions"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h3 class="unica-one underline text-center">Food & Personal</h3>
+            <canvas id="monthlyPersonalPieChart"></canvas>
+        </div>
     </div>
 </div>

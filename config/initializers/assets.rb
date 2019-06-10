@@ -15,9 +15,9 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 #       MONTHLY BUDGET JAVASCRIPT
 # --------------------------------------
 
-Rails.application.config.assets.precompile += %w( monthlyBudget/charts/monthlyNoCharts.js monthlyBudget/charts/monthlyPieCharts.js )
 Rails.application.config.assets.precompile += %w( monthlyBudget/monthlyLogic.js )
-Rails.application.config.assets.precompile += %w( general/localStorage.js general/tabDisplay.js )
+Rails.application.config.assets.precompile += %w( general/tabDisplay.js )
+Rails.application.config.assets.precompile += %w( monthlyBudget/monthlyAdd.js )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets

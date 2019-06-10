@@ -17,17 +17,17 @@ $( document ).ready(function() {
                 monthlyNet = 4 * parseFloat($("#monthlyNet").val(), 10)
     
                 //NO CHARTS
-                $("#netIncomeCell").text("$" + monthlyNet)
+                $(".monthly-net-income-total").text("$" + monthlyNet)
             } else if ($("select.monthly-freq").children("option:selected").hasClass("bi-weekly-freq") == true){
                 monthlyNet = 2 * parseFloat($("#monthlyNet").val(), 10)
     
                 //NO CHARTS
-                $("#netIncomeCell").text("$" + monthlyNet)
+                $(".monthly-net-income-total").text("$" + monthlyNet)
             } else {
                 monthlyNet = 1 * parseFloat($("#monthlyNet").val(), 10)
     
                 //NO CHARTS
-                $("#netIncomeCell").text("$" + monthlyNet)
+                $(".monthly-net-income-total").text("$" + monthlyNet)
             }
     
         //-------------------------
@@ -63,7 +63,7 @@ $( document ).ready(function() {
             //MORTGAGE
             let monthlyMortgage = parseFloat($("#monthlyMortgage").val(), 10)
     
-            //REPAIR/MAINTINENCE
+            //REPAIR/maintenance
             let monthlyRepair = parseFloat($("#monthlyRepair").val(), 10)
     
             //CABLE/TV
@@ -336,183 +336,210 @@ $( document ).ready(function() {
             //=============================
             //      NO CHARTS GRAPH
             //-----------------------------
-    
+            
+        //--------------------------------
+        //        MONTHLY TOTALS
+        //--------------------------------
+
             // INCOME TOTAL
-            $("#netIncomeCell").text("$" + (monthlyNet || 0))
-            $("#monthlyIncomeTotal").text("$" + (monthlyNet || 0))
-    
+            $(".monthly-income-total").text("$" + (monthlyIncomeSum || 0))
+
+            // SAVINGS TOTAL
+            $(".monthly-savings-all-total").text("$" + (monthlySavingsSum || 0))
+
+            // EXPENSES TOTAL (Excluding Savings)
+            $(".monthly-expenses-total").text("$" + (monthlyExpensesSum || 0))
+
+            // HOME EXPENSES TOTAL
+            $(".monthly-home-expenses-total").text("$" + (monthlyHomeExpensesSum || 0))
+
+            //DEBT & LOANS TOTAL
+            $(".monthly-debt-total").text("$" + (monthlyDebtSum || 0))
+
+            //TRANSPORTATION TOTAL
+            $(".monthly-transportation-total").text("$" + (monthlyTransportationSum || 0))
+
+            //MEDICAL TOTAL
+            $(".monthly-medical-total").text("$" + (monthlyMedicalSum || 0))
+
+            //EDUCATIONAL TOTAL
+            $(".monthly-educational-total").text("$" + (monthlyEducationalSum || 0))
+
+            //FOOD & PERSONAL TOTAL
+            $(".monthly-food-and-personal-total").text("$" + (monthlyFoodAndPersonalSum || 0))
+
                 //--------------------------------
                 //        MONTHLY SAVINGS
                 //--------------------------------
                 
                 // SAVINGS (GENERAL)
-                $("#monthlySavingsCell").text("$" + (monthlySavings || 0))
+                $(".monthly-savings-general").text("$" + (monthlySavings || 0))
     
                 // EMERGENCY
-                $("#monthlyEmergencyCell").text("$" + (monthlyEmergency || 0))
+                $(".monthly-emergency-total").text("$" + (monthlyEmergency || 0))
     
                 // 401K
-                $("#monthly401kCell").text("$" + (monthly401k || 0))
+                $(".monthly-401k-total").text("$" + (monthly401k || 0))
     
                 // INVESTMENTS
-                $("#monthlyInvestmentsCell").text("$" + (monthlyInvestments || 0))
+                $(".monthly-investments-total").text("$" + (monthlyInvestments || 0))
     
                 // RETIREMENT
-                $("#monthlyRetirementCell").text("$" + (monthlyRetirement || 0))
+                $(".monthly-retirement-total").text("$" + (monthlyRetirement || 0))
     
                 //--------------------------------
                 //         HOME EXPENSES
                 //--------------------------------
     
                 // RENT
-                $("#monthlyRentCell").text("$" + (monthlyRent || 0))
+                $(".monthly-rent-total").text("$" + (monthlyRent || 0))
     
                 // MORTGAGE
-                $("#monthlyMortgageCell").text("$" + (monthlyMortgage || 0))
+                $(".monthly-mortgage-total").text("$" + (monthlyMortgage || 0))
     
-                // REPAIR/MAINTINENCE
-                $("#monthlyRepairCell").text("$" + (monthlyRepair || 0))
+                // REPAIR/maintenance
+                $(".monthly-repair-total").text("$" + (monthlyRepair || 0))
     
                 // CABLE/TV
-                $("#monthlyCableCell").text("$" + (monthlyCable || 0))
+                $(".monthly-cable-total").text("$" + (monthlyCable || 0))
     
                 // HOME INSURANCE
-                $("#monthlyHomeInsuranceCell").text("$" + (monthlyHomeInsurance || 0))
+                $(".monthly-home-insurance-total").text("$" + (monthlyHomeInsurance || 0))
     
                 // HOA FEES
-                $("#monthlyHOACell").text("$" + (monthlyHOA || 0))
+                $(".monthly-HOA-total").text("$" + (monthlyHOA || 0))
     
                 // INTERNET
-                $("#monthlyInternetCell").text("$" + (monthlyInternet || 0))
+                $(".monthly-internet-total").text("$" + (monthlyInternet || 0))
     
                 // CELLPHONE
-                $("#monthlyCellphoneCell").text("$" + (monthlyCellphone || 0))
+                $(".monthly-cellphone-total").text("$" + (monthlyCellphone || 0))
     
                 // WATER
-                $("#monthlyWaterCell").text("$" + (monthlyWater || 0))
+                $(".monthly-water-total").text("$" + (monthlyWater || 0))
     
                 // GAS (HOME)
-                $("#monthlyGasCell").text("$" + (monthlyGas || 0))
+                $(".monthly-gas-total").text("$" + (monthlyGas || 0))
     
                 // ELECTRICITY
-                $("#monthlyElectricityCell").text("$" + (monthlyElectricity || 0))
+                $(".monthly-electricity-total").text("$" + (monthlyElectricity || 0))
     
                 //--------------------------------
                 //         DEBT & LOANS
                 //--------------------------------
     
                 // CREDIT CARDS
-                $("#monthlyCreditCardsCell").text("$" + (monthlyCreditCards || 0))
+                $(".monthly-credit-cards-total").text("$" + (monthlyCreditCards || 0))
     
                 // STUDENT LOANS
-                $("#monthlyStudentLoansCell").text("$" + (monthlyStudentLoans || 0))
+                $(".monthly-student-loans-total").text("$" + (monthlyStudentLoans || 0))
     
                 // MEDICAL DEBT
-                $("#monthlyMedicalDebtCell").text("$" + (monthlyMedicalDebt || 0))
+                $(".monthly-medical-debt-total").text("$" + (monthlyMedicalDebt || 0))
     
                 // TAX PAYMENTS
-                $("#monthlyTaxPaymentsCell").text("$" + (monthlyTaxPayments || 0))
+                $(".monthly-tax-payments-total").text("$" + (monthlyTaxPayments || 0))
     
                 // STORE CARDS
-                $("#monthlyStoreCardsCell").text("$" + (monthlyStoreCards || 0))
+                $(".monthly-store-cards-total").text("$" + (monthlyStoreCards || 0))
     
                 // PERSONAL DEBT
-                $("#monthlyPersonalDebtCell").text("$" + (monthlyPersonalDebt || 0))
+                $(".monthly-personal-debt-total").text("$" + (monthlyPersonalDebt || 0))
     
                 //--------------------------------
                 //         TRANSPORTATION
                 //--------------------------------
     
                 // CAR PAYMENTS
-                $("#monthlyCarPaymentsCell").text("$" + (monthlyCarPayments || 0))
+                $(".monthly-car-payment-total").text("$" + (monthlyCarPayments || 0))
     
                 // CAR INSURANCE
-                $("#monthlyCarInsuranceCell").text("$" + (monthlyCarInsurance || 0))
+                $(".monthly-car-insurance-total").text("$" + (monthlyCarInsurance || 0))
     
                 // (CAR) GAS
-                $("#monthlyCarGasCell").text("$" + (monthlyCarGas || 0))
+                $(".monthly-car-gas-total").text("$" + (monthlyCarGas || 0))
     
                 // CAR REPAIRS
-                $("#monthlyCarRepairsCell").text("$" + (monthlyCarRepairs || 0))
+                $(".monthly-car-repairs-total").text("$" + (monthlyCarRepairs || 0))
     
                 // PARKING & TOLLS
-                $("#monthlyParkingCell").text("$" + (monthlyParking || 0))
+                $(".monthly-parking-total").text("$" + (monthlyParking || 0))
     
                 // PUBLIC TRANSIT
-                $("#monthlyPublicTransitCell").text("$" + (monthlyPublicTransit || 0))
+                $(".monthly-public-transit-total").text("$" + (monthlyPublicTransit || 0))
     
                 //--------------------------------
                 //            MEDICAL
                 //--------------------------------
     
                 // HEALTH INSURANCE
-                $("#monthlyHealthInsuranceCell").text("$" + (monthlyHealthInsurance || 0))
+                $(".monthly-health-insurance-total").text("$" + (monthlyHealthInsurance || 0))
     
                 // COPAYS
-                $("#monthlyCopaysCell").text("$" + (monthlyCopays || 0))
+                $(".monthly-copays-total").text("$" + (monthlyCopays || 0))
     
                 // PRESCRIPTIONS
-                $("#monthlyPrescriptionsCell").text("$" + (monthlyPrescriptions || 0))
+                $(".monthly-prescriptions-total").text("$" + (monthlyPrescriptions || 0))
     
                 // LIFE INSURANCE
-                $("#monthlyLifeInsuranceCell").text("$" + (monthlyLifeInsurance || 0))
+                $(".monthly-life-insurance-total").text("$" + (monthlyLifeInsurance || 0))
     
                 //--------------------------------
                 //          EDUCATIONAL
                 //--------------------------------
     
                 // SCHOOL SUPPLIES
-                $("#monthlySchoolSuppliesCell").text("$" + (monthlySchoolSupplies || 0))
+                $(".monthly-school-supplies-total").text("$" + (monthlySchoolSupplies || 0))
     
                 // MEAL PLAN
-                $("#monthlyMealPlanCell").text("$" + (monthlyMealPlan || 0))
+                $(".monthly-meal-plan-total").text("$" + (monthlyMealPlan || 0))
     
                 // TUITION
-                $("#monthlyTuitionCell").text("$" + (monthlyTuition || 0))
+                $(".monthly-tuition-total").text("$" + (monthlyTuition || 0))
     
                 // TEXTBOOKS
-                $("#monthlyTextbooksCell").text("$" + (monthlyTextbooks || 0))
+                $(".monthly-textbooks-total").text("$" + (monthlyTextbooks || 0))
                 
                 //--------------------------------
                 //        FOOD & PERSONAL
                 //--------------------------------
     
                 // GROCERIES/HOUSEHOLD PURCHASES
-                $("#monthlyGroceriesCell").text("$" + (monthlyGroceries || 0))
+                $(".monthly-groceries-total").text("$" + (monthlyGroceries || 0))
                 
                 // MEALS OUT
-                $("#monthlyMealsOutCell").text("$" + (monthlyMealsOut || 0))
+                $(".monthly-meals-out-total").text("$" + (monthlyMealsOut || 0))
     
                 // CLOTHING
-                $("#monthlyClothingCell").text("$" + (monthlyClothing || 0))
+                $(".monthly-clothing-total").text("$" + (monthlyClothing || 0))
     
                 // ENTERTAINMENT
-                $("#monthlyEntertainmentCell").text("$" + (monthlyEntertainment || 0))
+                $(".monthly-entertainment-total").text("$" + (monthlyEntertainment || 0))
     
                 // PET SUPPLIES
-                $("#monthlyPetCell").text("$" + (monthlyPet || 0))
+                $(".monthly-pet-total").text("$" + (monthlyPet || 0))
     
                 // HOBBIES & SPORTS
-                $("#monthlyHobbiesCell").text("$" + (monthlyHobbies || 0))
+                $(".monthly-hobbies-total").text("$" + (monthlyHobbies || 0))
     
                 // CHARITABLE DONATIONS
-                $("#monthlyCharitableDonationsCell").text("$" + (monthlyCharitableDonations || 0))
+                $(".monthly-charitable-donations-total").text("$" + (monthlyCharitableDonations || 0))
     
                 // SUBSCRIPTIONS
-                $("#monthlySubscriptionsCell").text("$" + (monthlySubscriptions || 0))
+                $(".monthly-subscriptions-total").text("$" + (monthlySubscriptions || 0))
     
                 //--------------------------------
                 //        ONE-TIME EXPENSES
                 //--------------------------------
     
                 // SAVINGS TOTAL
-                $("#monthlySavingsTotal").text("$" + monthlySavingsSum)
+                $(".monthly-savings-total").text("$" + monthlySavingsSum)
     
                 // EXPENSES TOTAL
-                $("#monthlyExpensesTotal").text("$" + monthlyExpensesSum)
+                $(".monthly-expenses-total").text("$" + monthlyExpensesSum)
     
                 // MONTHLY TOTAL
-                $("#monthlyFinishingTotal").text("$" + (monthlyTotal || 0))
+                $(".monthly-finishing-total").text("$" + (monthlyTotal || 0))
     
     
         })

@@ -1,10 +1,9 @@
-<div class="container">
+<div class="container nolabooks-container">
     <div class="row">
         
         <div class="card border-orange mx-auto w-100 mt-4">
-            <div class="card-header bg-orange">
-                <h1 class="display-4 font-weight-lighter text-center text-white my-2">
-                    BudgetPal <i class="fas fa-calculator"></i></h1>
+            <div class="card-header bg-orange text-center">
+                <img src="/NolaBooksLogoWhiteText2.png" class="text-center" width="40%"/>
             </div>
             <div class="card-body calculator-tab-window">
                 <ul class="nav nav-tabs navbar-tab-headers" id="myTab" role="tablist">
@@ -35,38 +34,38 @@
                     <!-------------------------------->
                     <div class="tab-pane fade show active" id="tab1Content" role="tabpanel" aria-labelledby="tab1">
                         <div id="monthlyAlertField"></div>
-                        <div class="accordion mt-3" id="monthlyBudgetAccordion">
-                            <div class="border-top border-bottom border-info my-1" id="headingOne">
+                        <div class="accordion monthly-budget-accordion mt-3">
+                                <div class="border-top border-bottom border-info my-1" id="headingOne">
+                                    <h2 class="mb-0 border-top border-bottom border-info">
+                                        <button class="btn btn-link text-info collapse-heading" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <i class="fas fa-minus"></i> Current Assets
+                                        </button>
+                                    </h2>
+    
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                        <div class="card-body border-bottom border-info income-collapse">
+    
+                                            <%= render "pages/monthlyBudget/collapses/monthly-current-assets" %>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="border-top border-bottom border-info my-1" id="headingTwo">
                                 <h2 class="mb-0 border-top border-bottom border-info">
                                     <button class="btn btn-link text-info collapse-heading" type="button"
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne" id="monthlyIncomeCollapse">
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
                                         <i class="fas fa-minus"></i> Income
                                     </button>
                                 </h2>
 
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
                                     <div class="card-body border-bottom border-info income-collapse">
 
                                         <!-- income-collapse.html.erb PARTIAL -->
                                         <%= render "pages/monthlyBudget/collapses/income-collapse" %>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-top border-bottom border-info my-1" id="headingTwo">
-                                <h2 class="mb-0 border-top border-bottom border-info">
-                                    <button class="btn btn-link collapsed text-info collapse-heading" type="button"
-                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                                        aria-controls="collapseTwo" id="monthlySavingsCollapse">
-                                        <i class="fas fa-minus"></i> Savings
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
-                                    <div class="card-body border-bottom border-info savings-collapse">
-
-                                        <!-- savings-collapse.html.erb PARTIAL -->
-                                        <%= render "pages/monthlyBudget/collapses/savings-collapse" %>
 
                                     </div>
                                 </div>
@@ -76,10 +75,27 @@
                                     <button class="btn btn-link collapsed text-info collapse-heading" type="button"
                                         data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
                                         aria-controls="collapseThree">
-                                        <i class="fas fa-minus"></i> Expenses
+                                        <i class="fas fa-minus"></i> Savings
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
+                                    <div class="card-body border-bottom border-info savings-collapse">
+
+                                        <!-- savings-collapse.html.erb PARTIAL -->
+                                        <%= render "pages/monthlyBudget/collapses/savings-collapse" %>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-bottom border-info my-1" id="headingFour">
+                                <h2 class="mb-0 border-top border-bottom border-info">
+                                    <button class="btn btn-link collapsed text-info collapse-heading" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        <i class="fas fa-minus"></i> Expenses
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour">
                                     <div class="card-body border-info expenses-collapse">
                                         <div class="row">
                                             <div class="col-2">
@@ -112,7 +128,7 @@
                                                         id="monthlyFoodAndPersonalTab" data-toggle="list"
                                                         href="#monthlyFoodAndPersonalDisplay" role="tab"
                                                         aria-controls="monthlyFoodAndPersonalDisplay"
-                                                        aria-selected="false">Food and
+                                                        aria-selected="false">Food &
                                                         Personal <i class="fas fa-wifi"></i></a>
                                                     <a class="nav-link monthly-yearly-tab" id="monthlyOneTimeTab"
                                                         data-toggle="list" href="#monthlyOneTimeDisplay" role="tab"

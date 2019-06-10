@@ -1,45 +1,213 @@
-<div class="container my-3">
+<div class="container monthly-medical-container my-3">
+    <hr/>
     <h3 class="unica-one">Medical Expenses</h3>
+    <hr/>
     <div class="form-row">
-        <label>Health Insurance:</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+        <div class="col">
+            <label>Health Insurance:</label>
+        </div>
+        <div class="col-4">
+            <label class="underline">Due Date:</label>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number" class="form-control monthly-health-insurance-input">
             </div>
-            <input type="number" class="form-control" id="monthlyHealthInsurance">
+        </div>
+        <div class="col-4">
+            <select class="form-control monthly-health-insurance-freq">
+                <option value="0">Choose...</option>
+                <option value="1"><span class="monthly-title"></span> 1st</option>
+                <option value="2"><span class="monthly-title"></span> 2nd</option>
+                <option value="3"><span class="monthly-title"></span> 3rd</option>
+                <option value="4"><span class="monthly-title"></span> 4th</option>
+                <option value="5"><span class="monthly-title"></span> 5th</option>
+                <option value="6"><span class="monthly-title"></span> 6th</option>
+                <option value="7"><span class="monthly-title"></span> 7th</option>
+                <option value="8"><span class="monthly-title"></span> 8th</option>
+                <option value="9"><span class="monthly-title"></span> 9th</option>
+                <option value="10"><span class="monthly-title"></span> 10th</option>
+                <option value="11"><span class="monthly-title"></span> 11th</option>
+                <option value="12"><span class="monthly-title"></span> 12th</option>
+                <option value="13"><span class="monthly-title"></span> 13th</option>
+                <option value="14"><span class="monthly-title"></span> 14th</option>
+                <option value="15"><span class="monthly-title"></span> 15th</option>
+                <option value="16"><span class="monthly-title"></span> 16th</option>
+                <option value="17"><span class="monthly-title"></span> 17th</option>
+                <option value="18"><span class="monthly-title"></span> 18th</option>
+                <option value="19"><span class="monthly-title"></span> 19th</option>
+                <option value="20"><span class="monthly-title"></span> 20th</option>
+                <option value="21"><span class="monthly-title"></span> 21st</option>
+                <option value="22"><span class="monthly-title"></span> 22nd</option>
+                <option value="23"><span class="monthly-title"></span> 23rd</option>
+                <option value="24"><span class="monthly-title"></span> 24th</option>
+                <option value="25"><span class="monthly-title"></span> 25th</option>
+                <option value="26"><span class="monthly-title"></span> 26th</option>
+                <option value="27"><span class="monthly-title"></span> 27th</option>
+                <option value="28"><span class="monthly-title"></span> 28th</option>
+                <option value="29"><span class="monthly-title"></span> 29th</option>
+                <option value="30"><span class="monthly-title"></span> 30th</option>
+                <option value="31"><span class="monthly-title"></span> 31st</option>
+            </select>
         </div>
     </div>
     <div class="form-row">
         <label>Copays:</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number" class="form-control monthly-copays-input">
             </div>
-            <input type="number" class="form-control" id="monthlyCopays">
+        </div>
+        <div class="col-4">
+            <select class="form-control monthly-copays-freq">
+                <option value="0">Choose...</option>
+                <option value="1"><span class="monthly-title"></span> 1st</option>
+                <option value="2"><span class="monthly-title"></span> 2nd</option>
+                <option value="3"><span class="monthly-title"></span> 3rd</option>
+                <option value="4"><span class="monthly-title"></span> 4th</option>
+                <option value="5"><span class="monthly-title"></span> 5th</option>
+                <option value="6"><span class="monthly-title"></span> 6th</option>
+                <option value="7"><span class="monthly-title"></span> 7th</option>
+                <option value="8"><span class="monthly-title"></span> 8th</option>
+                <option value="9"><span class="monthly-title"></span> 9th</option>
+                <option value="10"><span class="monthly-title"></span> 10th</option>
+                <option value="11"><span class="monthly-title"></span> 11th</option>
+                <option value="12"><span class="monthly-title"></span> 12th</option>
+                <option value="13"><span class="monthly-title"></span> 13th</option>
+                <option value="14"><span class="monthly-title"></span> 14th</option>
+                <option value="15"><span class="monthly-title"></span> 15th</option>
+                <option value="16"><span class="monthly-title"></span> 16th</option>
+                <option value="17"><span class="monthly-title"></span> 17th</option>
+                <option value="18"><span class="monthly-title"></span> 18th</option>
+                <option value="19"><span class="monthly-title"></span> 19th</option>
+                <option value="20"><span class="monthly-title"></span> 20th</option>
+                <option value="21"><span class="monthly-title"></span> 21st</option>
+                <option value="22"><span class="monthly-title"></span> 22nd</option>
+                <option value="23"><span class="monthly-title"></span> 23rd</option>
+                <option value="24"><span class="monthly-title"></span> 24th</option>
+                <option value="25"><span class="monthly-title"></span> 25th</option>
+                <option value="26"><span class="monthly-title"></span> 26th</option>
+                <option value="27"><span class="monthly-title"></span> 27th</option>
+                <option value="28"><span class="monthly-title"></span> 28th</option>
+                <option value="29"><span class="monthly-title"></span> 29th</option>
+                <option value="30"><span class="monthly-title"></span> 30th</option>
+                <option value="31"><span class="monthly-title"></span> 31st</option>
+            </select>
         </div>
     </div>
     <div class="form-row">
         <label>Prescriptions:</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number" class="form-control monthly-prescriptions-input">
             </div>
-            <input type="number" class="form-control" id="monthlyPrescriptions">
+        </div>
+        <div class="col-4">
+            <select class="form-control monthly-prescriptions-freq">
+                <option value="0">Choose...</option>
+                <option value="1"><span class="monthly-title"></span> 1st</option>
+                <option value="2"><span class="monthly-title"></span> 2nd</option>
+                <option value="3"><span class="monthly-title"></span> 3rd</option>
+                <option value="4"><span class="monthly-title"></span> 4th</option>
+                <option value="5"><span class="monthly-title"></span> 5th</option>
+                <option value="6"><span class="monthly-title"></span> 6th</option>
+                <option value="7"><span class="monthly-title"></span> 7th</option>
+                <option value="8"><span class="monthly-title"></span> 8th</option>
+                <option value="9"><span class="monthly-title"></span> 9th</option>
+                <option value="10"><span class="monthly-title"></span> 10th</option>
+                <option value="11"><span class="monthly-title"></span> 11th</option>
+                <option value="12"><span class="monthly-title"></span> 12th</option>
+                <option value="13"><span class="monthly-title"></span> 13th</option>
+                <option value="14"><span class="monthly-title"></span> 14th</option>
+                <option value="15"><span class="monthly-title"></span> 15th</option>
+                <option value="16"><span class="monthly-title"></span> 16th</option>
+                <option value="17"><span class="monthly-title"></span> 17th</option>
+                <option value="18"><span class="monthly-title"></span> 18th</option>
+                <option value="19"><span class="monthly-title"></span> 19th</option>
+                <option value="20"><span class="monthly-title"></span> 20th</option>
+                <option value="21"><span class="monthly-title"></span> 21st</option>
+                <option value="22"><span class="monthly-title"></span> 22nd</option>
+                <option value="23"><span class="monthly-title"></span> 23rd</option>
+                <option value="24"><span class="monthly-title"></span> 24th</option>
+                <option value="25"><span class="monthly-title"></span> 25th</option>
+                <option value="26"><span class="monthly-title"></span> 26th</option>
+                <option value="27"><span class="monthly-title"></span> 27th</option>
+                <option value="28"><span class="monthly-title"></span> 28th</option>
+                <option value="29"><span class="monthly-title"></span> 29th</option>
+                <option value="30"><span class="monthly-title"></span> 30th</option>
+                <option value="31"><span class="monthly-title"></span> 31st</option>
+            </select>
         </div>
     </div>
     <div class="form-row">
         <label>Life Insurance:</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="number" class="form-control monthly-life-insurance-input">
             </div>
-            <input type="number" class="form-control" id="monthlyLifeInsurance">
+        </div>
+        <div class="col-4">
+            <select class="form-control monthly-life-insurance-freq">
+                <option value="0">Choose...</option>
+                <option value="1"><span class="monthly-title"></span> 1st</option>
+                <option value="2"><span class="monthly-title"></span> 2nd</option>
+                <option value="3"><span class="monthly-title"></span> 3rd</option>
+                <option value="4"><span class="monthly-title"></span> 4th</option>
+                <option value="5"><span class="monthly-title"></span> 5th</option>
+                <option value="6"><span class="monthly-title"></span> 6th</option>
+                <option value="7"><span class="monthly-title"></span> 7th</option>
+                <option value="8"><span class="monthly-title"></span> 8th</option>
+                <option value="9"><span class="monthly-title"></span> 9th</option>
+                <option value="10"><span class="monthly-title"></span> 10th</option>
+                <option value="11"><span class="monthly-title"></span> 11th</option>
+                <option value="12"><span class="monthly-title"></span> 12th</option>
+                <option value="13"><span class="monthly-title"></span> 13th</option>
+                <option value="14"><span class="monthly-title"></span> 14th</option>
+                <option value="15"><span class="monthly-title"></span> 15th</option>
+                <option value="16"><span class="monthly-title"></span> 16th</option>
+                <option value="17"><span class="monthly-title"></span> 17th</option>
+                <option value="18"><span class="monthly-title"></span> 18th</option>
+                <option value="19"><span class="monthly-title"></span> 19th</option>
+                <option value="20"><span class="monthly-title"></span> 20th</option>
+                <option value="21"><span class="monthly-title"></span> 21st</option>
+                <option value="22"><span class="monthly-title"></span> 22nd</option>
+                <option value="23"><span class="monthly-title"></span> 23rd</option>
+                <option value="24"><span class="monthly-title"></span> 24th</option>
+                <option value="25"><span class="monthly-title"></span> 25th</option>
+                <option value="26"><span class="monthly-title"></span> 26th</option>
+                <option value="27"><span class="monthly-title"></span> 27th</option>
+                <option value="28"><span class="monthly-title"></span> 28th</option>
+                <option value="29"><span class="monthly-title"></span> 29th</option>
+                <option value="30"><span class="monthly-title"></span> 30th</option>
+                <option value="31"><span class="monthly-title"></span> 31st</option>
+            </select>
         </div>
     </div>
     <div class="text-center">
-        <button type="button" id="monthlyAddMedicalToYear" class="mx-auto btn btn-orange w-50 mt-3 unica-one">Transfer
-            to Yearly Budget <i class="fas fa-sign-in-alt"></i></button>
-        <button type="button" class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one monthly-submit-button">Submit
-            <i class="fas fa-paper-plane"></i></button>
+        <button type="button" class="mx-auto btn btn-success w-25 btn-block mt-3 unica-one monthly-submit-button">Submit <i class="fas fa-paper-plane"></i></button>
+        <button type="button" class="mx-auto btn btn-orange w-50 mt-3 unica-one monthly-medical-to-yearly">Transfer
+            to Yearly
+            Budget <i class="fas fa-sign-in-alt"></i>
+        </button>
     </div>
 </div>
