@@ -33,16 +33,14 @@ gem 'jbuilder', '~> 2.5'
 #jQuery Gem
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
+#jQuery UI Gem
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
 #Bootstrap 4 Gem
 gem 'bootstrap', '~> 4.3.1'
 
 #Better Errors Gem
 gem 'better_errors', '~> 2.5', '>= 2.5.1'
-
-#Semantic UI Gem
-
-#Fontawesome Gem
-gem 'font-awesome-rails' 
 
 #Chart JS Gem
 gem 'chart-js-rails'
