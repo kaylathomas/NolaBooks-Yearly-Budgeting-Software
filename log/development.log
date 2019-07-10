@@ -34053,3 +34053,310 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 249ms (Views: 244.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-07-04 13:22:17 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/monthlyBudget/collapses/_monthly-current-assets.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/collapses/_income-collapse.html.erb (1.2ms)
+  Rendered pages/monthlyBudget/collapses/_savings-collapse.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-home-display.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-debt-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-transportation-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-medical-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-educational-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-food-and-personal-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-one-time-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/charts/_monthly-light-summary.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/charts/_monthly-expenses.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/charts/_monthly-deep-summary.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/charts/_monthly-no-charts.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/_tabContent2.html.erb (16.5ms)
+  Rendered pages/yearlyBudget/1january/_january-monthly-budget.html.erb (5.3ms)
+  Rendered pages/yearlyBudget/2february/_february-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/3march/_march-monthly-budget.html.erb (0.8ms)
+  Rendered pages/yearlyBudget/4april/_april-monthly-budget.html.erb (0.8ms)
+  Rendered pages/yearlyBudget/5may/_may-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/6june/_june-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/7july/_july-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/8august/_august-monthly-budget.html.erb (0.8ms)
+  Rendered pages/yearlyBudget/9september/_september-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/10october/_october-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/11november/_november-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/12december/_december-monthly-budget.html.erb (0.8ms)
+  Rendered pages/index.html.erb within layouts/application (123.5ms)
+Completed 200 OK in 522ms (Views: 515.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-09 16:36:24 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/monthlyBudget/collapses/_monthly-current-assets.html.erb (0.4ms)
+  Rendered pages/monthlyBudget/collapses/_income-collapse.html.erb (1.3ms)
+  Rendered pages/monthlyBudget/collapses/_savings-collapse.html.erb (0.8ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-home-display.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-debt-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-transportation-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-medical-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-educational-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-food-and-personal-display.html.erb (0.9ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-one-time-display.html.erb (0.8ms)
+  Rendered pages/monthlyBudget/charts/_monthly-light-summary.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/charts/_monthly-expenses.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/charts/_monthly-deep-summary.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/charts/_monthly-no-charts.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/_tabContent2.html.erb (19.6ms)
+  Rendered pages/yearlyBudget/1january/_january-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/2february/_february-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/3march/_march-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/4april/_april-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/5may/_may-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/6june/_june-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/7july/_july-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/8august/_august-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/9september/_september-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/10october/_october-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/11november/_november-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/12december/_december-monthly-budget.html.erb (1.0ms)
+  Rendered pages/index.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 531ms (Views: 517.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-10 09:40:12 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/monthlyBudget/collapses/_monthly-current-assets.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/collapses/_income-collapse.html.erb (2.0ms)
+  Rendered pages/monthlyBudget/collapses/_savings-collapse.html.erb (1.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-home-display.html.erb (1.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-debt-display.html.erb (1.1ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-transportation-display.html.erb (0.9ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-medical-display.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-educational-display.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-food-and-personal-display.html.erb (1.2ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-one-time-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/charts/_monthly-light-summary.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/charts/_monthly-expenses.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/charts/_monthly-deep-summary.html.erb (1.2ms)
+  Rendered pages/monthlyBudget/charts/_monthly-no-charts.html.erb (0.9ms)
+  Rendered pages/monthlyBudget/_tabContent2.html.erb (24.4ms)
+  Rendered pages/yearlyBudget/1january/_january-monthly-budget.html.erb (1.9ms)
+  Rendered pages/yearlyBudget/2february/_february-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/3march/_march-monthly-budget.html.erb (1.3ms)
+  Rendered pages/yearlyBudget/4april/_april-monthly-budget.html.erb (1.8ms)
+  Rendered pages/yearlyBudget/5may/_may-monthly-budget.html.erb (2.4ms)
+  Rendered pages/yearlyBudget/6june/_june-monthly-budget.html.erb (1.3ms)
+  Rendered pages/yearlyBudget/7july/_july-monthly-budget.html.erb (7.9ms)
+  Rendered pages/yearlyBudget/8august/_august-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/9september/_september-monthly-budget.html.erb (1.1ms)
+  Rendered pages/yearlyBudget/10october/_october-monthly-budget.html.erb (1.1ms)
+  Rendered pages/yearlyBudget/11november/_november-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/12december/_december-monthly-budget.html.erb (1.0ms)
+  Rendered pages/index.html.erb within layouts/application (167.2ms)
+Completed 500 Internal Server Error in 3094ms
+
+
+
+Sprockets::FileNotFound - couldn't find file 'activestorage' with type 'application/javascript'
+Checked in these paths: 
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/config
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/images
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/javascripts
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/chart-js-rails-0.1.6/vendor/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/actionview-5.2.3/lib/assets/compiled
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/node_modules
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/popper_js-1.14.5/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/bootstrap-4.3.1/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/bootstrap-4.3.1/assets/javascripts:
+  app/assets/javascripts/application.js:17:in `'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___886514359829333288_70297054327920'
+
+Started POST "/__better_errors/61a3a98727e6a6d4/variables" for ::1 at 2019-07-10 09:40:15 -0400
+Started GET "/" for ::1 at 2019-07-10 09:41:24 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/monthlyBudget/collapses/_monthly-current-assets.html.erb (0.4ms)
+  Rendered pages/monthlyBudget/collapses/_income-collapse.html.erb (1.4ms)
+  Rendered pages/monthlyBudget/collapses/_savings-collapse.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-home-display.html.erb (1.1ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-debt-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-transportation-display.html.erb (1.1ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-medical-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-educational-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-food-and-personal-display.html.erb (0.9ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-one-time-display.html.erb (0.4ms)
+  Rendered pages/monthlyBudget/charts/_monthly-light-summary.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/charts/_monthly-expenses.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/charts/_monthly-deep-summary.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/charts/_monthly-no-charts.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/_tabContent2.html.erb (17.5ms)
+  Rendered pages/yearlyBudget/1january/_january-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/2february/_february-monthly-budget.html.erb (1.9ms)
+  Rendered pages/yearlyBudget/3march/_march-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/4april/_april-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/5may/_may-monthly-budget.html.erb (1.6ms)
+  Rendered pages/yearlyBudget/6june/_june-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/7july/_july-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/8august/_august-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/9september/_september-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/10october/_october-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/11november/_november-monthly-budget.html.erb (1.5ms)
+  Rendered pages/yearlyBudget/12december/_december-monthly-budget.html.erb (0.9ms)
+  Rendered pages/index.html.erb within layouts/application (138.6ms)
+Completed 500 Internal Server Error in 184ms
+
+
+
+Sprockets::FileNotFound - couldn't find file 'activestorage' with type 'application/javascript'
+Checked in these paths: 
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/config
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/images
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/javascripts
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/chart-js-rails-0.1.6/vendor/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/actionview-5.2.3/lib/assets/compiled
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/node_modules
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/popper_js-1.14.5/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/bootstrap-4.3.1/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/bootstrap-4.3.1/assets/javascripts:
+  app/assets/javascripts/application.js:17:in `'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___886514359829333288_70297122095140'
+
+Started POST "/__better_errors/63971ffeea3b4fec/variables" for ::1 at 2019-07-10 09:41:24 -0400
+Started GET "/" for ::1 at 2019-07-10 09:41:25 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/monthlyBudget/collapses/_monthly-current-assets.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/collapses/_income-collapse.html.erb (1.1ms)
+  Rendered pages/monthlyBudget/collapses/_savings-collapse.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-home-display.html.erb (0.8ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-debt-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-transportation-display.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-medical-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-educational-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-food-and-personal-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-one-time-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/charts/_monthly-light-summary.html.erb (0.3ms)
+  Rendered pages/monthlyBudget/charts/_monthly-expenses.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/charts/_monthly-deep-summary.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/charts/_monthly-no-charts.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/_tabContent2.html.erb (16.4ms)
+  Rendered pages/yearlyBudget/1january/_january-monthly-budget.html.erb (0.8ms)
+  Rendered pages/yearlyBudget/2february/_february-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/3march/_march-monthly-budget.html.erb (1.3ms)
+  Rendered pages/yearlyBudget/4april/_april-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/5may/_may-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/6june/_june-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/7july/_july-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/8august/_august-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/9september/_september-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/10october/_october-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/11november/_november-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/12december/_december-monthly-budget.html.erb (1.0ms)
+  Rendered pages/index.html.erb within layouts/application (125.9ms)
+Completed 500 Internal Server Error in 174ms
+
+
+
+Sprockets::FileNotFound - couldn't find file 'activestorage' with type 'application/javascript'
+Checked in these paths: 
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/config
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/images
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/javascripts
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/app/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/chart-js-rails-0.1.6/vendor/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/actionview-5.2.3/lib/assets/compiled
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/kthomas/Desktop/Coding/Projects/JavaScript/monthly-budgeting-calculatorJS/node_modules
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/popper_js-1.14.5/assets/javascripts
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/bootstrap-4.3.1/assets/stylesheets
+  /Users/kthomas/.rvm/gems/ruby-2.4.2/gems/bootstrap-4.3.1/assets/javascripts:
+  app/assets/javascripts/application.js:17:in `'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___886514359829333288_70297054488120'
+
+Started POST "/__better_errors/796fd83341e95a26/variables" for ::1 at 2019-07-10 09:41:25 -0400
+Started GET "/" for ::1 at 2019-07-10 09:41:48 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/monthlyBudget/collapses/_monthly-current-assets.html.erb (0.4ms)
+  Rendered pages/monthlyBudget/collapses/_income-collapse.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/collapses/_savings-collapse.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-home-display.html.erb (0.8ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-debt-display.html.erb (0.9ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-transportation-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-medical-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-educational-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-food-and-personal-display.html.erb (0.9ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-one-time-display.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/charts/_monthly-light-summary.html.erb (0.4ms)
+  Rendered pages/monthlyBudget/charts/_monthly-expenses.html.erb (0.4ms)
+  Rendered pages/monthlyBudget/charts/_monthly-deep-summary.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/charts/_monthly-no-charts.html.erb (0.5ms)
+  Rendered pages/monthlyBudget/_tabContent2.html.erb (15.4ms)
+  Rendered pages/yearlyBudget/1january/_january-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/2february/_february-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/3march/_march-monthly-budget.html.erb (0.8ms)
+  Rendered pages/yearlyBudget/4april/_april-monthly-budget.html.erb (0.8ms)
+  Rendered pages/yearlyBudget/5may/_may-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/6june/_june-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/7july/_july-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/8august/_august-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/9september/_september-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/10october/_october-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/11november/_november-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/12december/_december-monthly-budget.html.erb (0.8ms)
+  Rendered pages/index.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 581ms (Views: 577.8ms)
+
+
+Started GET "/" for ::1 at 2019-07-10 09:43:55 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/monthlyBudget/collapses/_monthly-current-assets.html.erb (0.4ms)
+  Rendered pages/monthlyBudget/collapses/_income-collapse.html.erb (2.0ms)
+  Rendered pages/monthlyBudget/collapses/_savings-collapse.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-home-display.html.erb (0.9ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-debt-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-transportation-display.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-medical-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-educational-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-food-and-personal-display.html.erb (1.0ms)
+  Rendered pages/monthlyBudget/expenses/_monthly-one-time-display.html.erb (0.6ms)
+  Rendered pages/monthlyBudget/charts/_monthly-light-summary.html.erb (0.8ms)
+  Rendered pages/monthlyBudget/charts/_monthly-expenses.html.erb (0.7ms)
+  Rendered pages/monthlyBudget/charts/_monthly-deep-summary.html.erb (1.1ms)
+  Rendered pages/monthlyBudget/charts/_monthly-no-charts.html.erb (1.1ms)
+  Rendered pages/monthlyBudget/_tabContent2.html.erb (27.4ms)
+  Rendered pages/yearlyBudget/1january/_january-monthly-budget.html.erb (1.6ms)
+  Rendered pages/yearlyBudget/2february/_february-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/3march/_march-monthly-budget.html.erb (1.0ms)
+  Rendered pages/yearlyBudget/4april/_april-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/5may/_may-monthly-budget.html.erb (1.4ms)
+  Rendered pages/yearlyBudget/6june/_june-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/7july/_july-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/8august/_august-monthly-budget.html.erb (0.9ms)
+  Rendered pages/yearlyBudget/9september/_september-monthly-budget.html.erb (1.1ms)
+  Rendered pages/yearlyBudget/10october/_october-monthly-budget.html.erb (1.7ms)
+  Rendered pages/yearlyBudget/11november/_november-monthly-budget.html.erb (1.2ms)
+  Rendered pages/yearlyBudget/12december/_december-monthly-budget.html.erb (2.1ms)
+  Rendered pages/index.html.erb within layouts/application (171.1ms)
+Completed 200 OK in 291ms (Views: 286.8ms)
+
+
