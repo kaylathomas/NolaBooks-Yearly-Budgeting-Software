@@ -1,24 +1,39 @@
-# README
+![NolaBooks Logo](https://kaylathomas.dev/images/nolabooks.png)
+# Formerly: A WISYWIG Bootstrap Form Creator
+Formerly allows easy, detailed creation and customization of Bootstrap Forms. [Try it out!](https://kaylathomas.github.io/Formerly-WYSIWYG-Bootstrap-Form-Creator/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Table of Contents:
+------------------
+- Features
+- Coming Soon
+- Technologies
+- Support
 
-Things you may want to cover:
+Features
+--------
 
-* Ruby version
+NolaBooks assists in the calculation of monthly and yearly expenses while offering data visualization with ChartJS charts.
 
-* System dependencies
+Coming Soon
+--------
 
-* Configuration
+**Printing Formats!**
 
-* Database creation
+All chats will be able to be printed out in different visualization formats to create monthly and yearly reports.
 
-* Database initialization
+Technologies
+------------
 
-* How to run the test suite
+NolaBooks was created with **HTML**, **CSS**, **JavaScript**, **jQuery**, **Bootstrap 4**, and **Ruby On Rails**. It is currently in the process of being converted to **React**.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+Support
+-------
 
-* ...
+If you are having any issues with the app, please let me know!
+I can be contacted at kaylathomas.dev@gmail.com
+
+License
+-------
+
+The project is licensed under the BSD license.
