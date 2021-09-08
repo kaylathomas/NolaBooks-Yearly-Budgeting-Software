@@ -38,7 +38,7 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'bootstrap', '~> 4.3.1'
 
 #Better Errors Gem
-gem 'better_errors', '~> 2.5', '>= 2.5.1'
+gem 'better_errors', '~> 2.8'
 
 #Chart JS Gem
 gem 'chart-js-rails'
